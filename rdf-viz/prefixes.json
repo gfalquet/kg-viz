@@ -1,0 +1,7 @@
+{
+ "rc" : "http://purl.org/rcnum/onto/rc#",
+ "rc-xvi" : "http://purl.org/rcnum/onto/rc-xvi#",
+ "rc-p" : "http://purl.org/rcnum/personne/",
+ "rc-pat" : "http://purl.org/rcnum/patronyme/",
+ "rc-ensp" : "http://purl.org/rcnum/enspers/" 
+}

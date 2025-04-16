@@ -1,0 +1,1531 @@
+@prefix doc: <http://purl.org/rcnum/doc/> .
+@prefix rc: <http://purl.org/rcnum/onto/rc#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rc:Seance rdfs:label "Séance"@fr .
+
+doc:REG-39 a rc:Registre ;
+    rdfs:label "REGISTRE 39" ;
+    rc:no_registre 39 ;
+    rc:séance doc:S-39-1,
+        doc:S-39-10,
+        doc:S-39-11,
+        doc:S-39-12,
+        doc:S-39-13,
+        doc:S-39-14,
+        doc:S-39-15,
+        doc:S-39-16,
+        doc:S-39-17,
+        doc:S-39-18,
+        doc:S-39-19,
+        doc:S-39-2,
+        doc:S-39-20,
+        doc:S-39-21,
+        doc:S-39-22,
+        doc:S-39-23,
+        doc:S-39-24,
+        doc:S-39-25,
+        doc:S-39-26,
+        doc:S-39-27,
+        doc:S-39-28,
+        doc:S-39-29,
+        doc:S-39-3,
+        doc:S-39-30,
+        doc:S-39-4,
+        doc:S-39-5,
+        doc:S-39-6,
+        doc:S-39-7,
+        doc:S-39-8,
+        doc:S-39-9 .
+
+doc:REG-40 a rc:Registre ;
+    rdfs:label "REGISTRE 40" ;
+    rc:no_registre 40 ;
+    rc:séance doc:S-40-1,
+        doc:S-40-10,
+        doc:S-40-100,
+        doc:S-40-101,
+        doc:S-40-102,
+        doc:S-40-103,
+        doc:S-40-104,
+        doc:S-40-105,
+        doc:S-40-106,
+        doc:S-40-107,
+        doc:S-40-108,
+        doc:S-40-109,
+        doc:S-40-11,
+        doc:S-40-110,
+        doc:S-40-111,
+        doc:S-40-112,
+        doc:S-40-113,
+        doc:S-40-114,
+        doc:S-40-115,
+        doc:S-40-116,
+        doc:S-40-117,
+        doc:S-40-118,
+        doc:S-40-119,
+        doc:S-40-12,
+        doc:S-40-120,
+        doc:S-40-121,
+        doc:S-40-122,
+        doc:S-40-123,
+        doc:S-40-124,
+        doc:S-40-125,
+        doc:S-40-126,
+        doc:S-40-127,
+        doc:S-40-128,
+        doc:S-40-129,
+        doc:S-40-13,
+        doc:S-40-130,
+        doc:S-40-131,
+        doc:S-40-132,
+        doc:S-40-133,
+        doc:S-40-134,
+        doc:S-40-135,
+        doc:S-40-136,
+        doc:S-40-137,
+        doc:S-40-138,
+        doc:S-40-139,
+        doc:S-40-14,
+        doc:S-40-140,
+        doc:S-40-141,
+        doc:S-40-142,
+        doc:S-40-143,
+        doc:S-40-144,
+        doc:S-40-145,
+        doc:S-40-146,
+        doc:S-40-147,
+        doc:S-40-148,
+        doc:S-40-149,
+        doc:S-40-15,
+        doc:S-40-150,
+        doc:S-40-151,
+        doc:S-40-152,
+        doc:S-40-153,
+        doc:S-40-154,
+        doc:S-40-155,
+        doc:S-40-156,
+        doc:S-40-157,
+        doc:S-40-158,
+        doc:S-40-159,
+        doc:S-40-16,
+        doc:S-40-160,
+        doc:S-40-161,
+        doc:S-40-162,
+        doc:S-40-163,
+        doc:S-40-164,
+        doc:S-40-165,
+        doc:S-40-166,
+        doc:S-40-167,
+        doc:S-40-168,
+        doc:S-40-169,
+        doc:S-40-17,
+        doc:S-40-170,
+        doc:S-40-171,
+        doc:S-40-172,
+        doc:S-40-173,
+        doc:S-40-174,
+        doc:S-40-175,
+        doc:S-40-176,
+        doc:S-40-177,
+        doc:S-40-178,
+        doc:S-40-179,
+        doc:S-40-18,
+        doc:S-40-180,
+        doc:S-40-181,
+        doc:S-40-182,
+        doc:S-40-183,
+        doc:S-40-184,
+        doc:S-40-185,
+        doc:S-40-186,
+        doc:S-40-187,
+        doc:S-40-188,
+        doc:S-40-189,
+        doc:S-40-19,
+        doc:S-40-190,
+        doc:S-40-191,
+        doc:S-40-192,
+        doc:S-40-193,
+        doc:S-40-194,
+        doc:S-40-195,
+        doc:S-40-196,
+        doc:S-40-197,
+        doc:S-40-198,
+        doc:S-40-199,
+        doc:S-40-2,
+        doc:S-40-20,
+        doc:S-40-200,
+        doc:S-40-201,
+        doc:S-40-202,
+        doc:S-40-203,
+        doc:S-40-204,
+        doc:S-40-205,
+        doc:S-40-206,
+        doc:S-40-207,
+        doc:S-40-208,
+        doc:S-40-209,
+        doc:S-40-21,
+        doc:S-40-210,
+        doc:S-40-211,
+        doc:S-40-212,
+        doc:S-40-213,
+        doc:S-40-214,
+        doc:S-40-215,
+        doc:S-40-216,
+        doc:S-40-217,
+        doc:S-40-218,
+        doc:S-40-219,
+        doc:S-40-22,
+        doc:S-40-220,
+        doc:S-40-221,
+        doc:S-40-222,
+        doc:S-40-223,
+        doc:S-40-224,
+        doc:S-40-225,
+        doc:S-40-226,
+        doc:S-40-227,
+        doc:S-40-228,
+        doc:S-40-229,
+        doc:S-40-23,
+        doc:S-40-230,
+        doc:S-40-231,
+        doc:S-40-232,
+        doc:S-40-233,
+        doc:S-40-234,
+        doc:S-40-235,
+        doc:S-40-236,
+        doc:S-40-237,
+        doc:S-40-238,
+        doc:S-40-239,
+        doc:S-40-24,
+        doc:S-40-240,
+        doc:S-40-241,
+        doc:S-40-242,
+        doc:S-40-243,
+        doc:S-40-244,
+        doc:S-40-245,
+        doc:S-40-246,
+        doc:S-40-247,
+        doc:S-40-248,
+        doc:S-40-249,
+        doc:S-40-25,
+        doc:S-40-250,
+        doc:S-40-26,
+        doc:S-40-27,
+        doc:S-40-28,
+        doc:S-40-29,
+        doc:S-40-3,
+        doc:S-40-30,
+        doc:S-40-31,
+        doc:S-40-32,
+        doc:S-40-33,
+        doc:S-40-34,
+        doc:S-40-35,
+        doc:S-40-36,
+        doc:S-40-37,
+        doc:S-40-38,
+        doc:S-40-39,
+        doc:S-40-4,
+        doc:S-40-40,
+        doc:S-40-41,
+        doc:S-40-42,
+        doc:S-40-43,
+        doc:S-40-44,
+        doc:S-40-45,
+        doc:S-40-46,
+        doc:S-40-47,
+        doc:S-40-48,
+        doc:S-40-49,
+        doc:S-40-5,
+        doc:S-40-50,
+        doc:S-40-51,
+        doc:S-40-52,
+        doc:S-40-53,
+        doc:S-40-54,
+        doc:S-40-55,
+        doc:S-40-56,
+        doc:S-40-57,
+        doc:S-40-58,
+        doc:S-40-59,
+        doc:S-40-6,
+        doc:S-40-60,
+        doc:S-40-61,
+        doc:S-40-62,
+        doc:S-40-63,
+        doc:S-40-64,
+        doc:S-40-65,
+        doc:S-40-66,
+        doc:S-40-67,
+        doc:S-40-68,
+        doc:S-40-69,
+        doc:S-40-7,
+        doc:S-40-70,
+        doc:S-40-71,
+        doc:S-40-72,
+        doc:S-40-73,
+        doc:S-40-74,
+        doc:S-40-75,
+        doc:S-40-76,
+        doc:S-40-77,
+        doc:S-40-78,
+        doc:S-40-79,
+        doc:S-40-8,
+        doc:S-40-80,
+        doc:S-40-81,
+        doc:S-40-82,
+        doc:S-40-83,
+        doc:S-40-84,
+        doc:S-40-85,
+        doc:S-40-86,
+        doc:S-40-87,
+        doc:S-40-88,
+        doc:S-40-89,
+        doc:S-40-9,
+        doc:S-40-90,
+        doc:S-40-91,
+        doc:S-40-92,
+        doc:S-40-93,
+        doc:S-40-94,
+        doc:S-40-95,
+        doc:S-40-96,
+        doc:S-40-97,
+        doc:S-40-98,
+        doc:S-40-99 .
+
+doc:O-39-1-1 a rc:Objet ;
+    rdfs:label "Les procureurs de Jussy" ;
+    rc:folio_debut "39_f85v°" ;
+    rc:lemme "Les procureurs de Jussy" ;
+    rc:seqno 1 ;
+    rc:texte "— Le châtelain dudit Jussy, Somareta, a référé que les procureurs de Jussy ont mis bas de leur clocher une cloche et les procureurs disent qu’ils l’on mise bas par le commandement du prédicant, pour vendre icelle et, de l’argent, ils veulent réparer leur église. Il a été ordonné, voyant qu’ils ont fait cela sans la licence de la Seigneurie, que ladite cloche soit retirée en la Maison de la Ville et que lesdits procureurs ne laissent pas pour cela de faire réparer ladite église." .
+
+doc:O-39-1-2 a rc:Objet ;
+    rdfs:label "Les prédicants de la Ville : monsieur Ferron, monsieur de Geneston, maître Abel Poupin, P. Nynault, Nicolas Petit, P. de L’Écluse, Henri de La Mare, Aimé Maigret, Champereau, Philippe Deléglise, Louis Cugnier" ;
+    rc:folio_debut "39_f85v°" ;
+    rc:lemme "Les prédicants de la Ville : monsieur Ferron, monsieur de Geneston, maître Abel Poupin, P. Nynault, Nicolas Petit, P. de L’Écluse, Henri de La Mare, Aimé Maigret, Champereau, Philippe Deléglise, Louis Cugnier" ;
+    rc:seqno 2 ;
+    rc:texte "— Sur la supplication par monsieur Calvin, ministre, au nom des autres prédicants, présentée, exposant la nécessité étant en eux causant la cherté du temps, requérant de leur établir un état gracieux pour vivre, il a été ordonné que les six seigneurs commis pour mettre de l’ordre sur les pauvres aient cette charge, que d’aviser de faire du bien aux prédicants qui en auront la nécessité." .
+
+doc:O-39-1-3 a rc:Objet ;
+    rdfs:label "Insolences rière Peney" ;
+    rc:folio_debut "39_f86" ;
+    rc:lemme "Insolences rière Peney" ;
+    rc:seqno 3 ;
+    rc:texte "— Pource que l’on a entendu que, au mandement de Peney, se font plusieurs insolences, comme paillardises manifestes, larcins, blasphèmes et autres choses illicites, il a été ordonné que le châtelain de Peney doive s’enquérir de cela et qu’il doive ester contre lesdits délinquants, afin que justice en soit faite." .
+
+doc:O-39-1-4 a rc:Objet ;
+    rdfs:label "Claude Mercier, détenu ; 10 écus" ;
+    rc:folio_debut "39_f86" ;
+    rc:lemme "Claude Mercier, détenu ; 10 écus" ;
+    rc:seqno 4 ;
+    rc:texte "— Lequel, plusieurs fois, a persévéré à jouer et a ôté et détenu le manteau d’un nommé Goy, à cause du différend du jeu, et, aussi, il a été ci-devant repris par la justice. Il a été ordonné qu’il soit condamné à dix écus pour la fortification de la ville et à crier merci à dieu et à la justice, et, par tel moyen, qu’il soit libéré des prisons, en payant tous les dépens." .
+
+doc:O-39-1-5 a rc:Objet ;
+    rdfs:label "Nicolarde, femme de Jean Clément, et Pernon, fille de feu Mermet Servand, sa servante, détenues" ;
+    rc:folio_debut "39_f86" ;
+    rc:lemme "Nicolarde, femme de Jean Clément, et Pernon, fille de feu Mermet Servand, sa servante, détenues" ;
+    rc:seqno 5 ;
+    rc:texte "— Laquelle Nicolarde avait fait partie criminelle contre sadite servante, à cause qu’elle trouva son fils mort. Et, ayant vu leurs réponses et pource que ladite Nicolarde n’a pas justifié sa quérimonie, et que ledit cas n’est pas justifié à quelle coulpe il a été fait, il a été ordonné que, moyennant la soumission de se représenter tantes fois et quantes qu’elles seront demandées, elles soient libérées des prisons, condamnant ladite Nicolarde à tous les dépens, tant d’elle que de sadite servante." .
+
+doc:O-39-1-6 a rc:Objet ;
+    rdfs:label "Le seigneur Pierre Bonna, détenu" ;
+    rc:folio_debut "39_f86" ;
+    rc:lemme "Le seigneur Pierre Bonna, détenu" ;
+    rc:seqno 6 ;
+    rc:texte "— Pource qu’il proférait, au tribunal, quelques paroles illicites, tant contre la justice que contre sa mère, comme le seigneur lieutenant a ainsi référé, ayant vu ses réponses, il a été ordonné que, avec de bonnes remontrances, il soit libéré des prisons, en payant tous les dépens." .
+
+doc:O-39-1-7 a rc:Objet ;
+    rdfs:label "Jean Bel, de Saint-Cergues" ;
+    rc:folio_debut "39_f86" ;
+    rc:lemme "Jean Bel, de Saint-Cergues" ;
+    rc:seqno 7 ;
+    rc:texte "— Lequel, ci-devant, a fait donation de plusieurs biens à l’Hôpital, dont il se trouve qu’ils sont du fief du Chablais et que Quisard, commissaire de Berne, ne veut pas les louer sans la licence de ses seigneurs. Il a été ordonné que cela demeure à la discrétion des procureurs de l’Hôpital et qu’ils trouvent quelque moyen sur tel cas, soit en écrivant audit commissaire ou en remettant lesdits biens à quelqu’un qui fasse récompense à l’Hôpital." .
+
+doc:O-39-1-8 a rc:Objet ;
+    rdfs:label "Nicolarde, femme de Jean Clément, dit Humbert" ;
+    rc:folio_debut "39_f86v°" ;
+    rc:lemme "Nicolarde, femme de Jean Clément, dit Humbert" ;
+    rc:seqno 8 ;
+    rc:texte "— Après qu’à icelle ont été faites les remontrances de la faute de son fils etc., en sortant de la Maison de la Ville, ladite Nicolarde a dit les semblables paroles : « L’on m’a pauvrement condamnée », comme les seigneurs Chicand et Des Arts ont ainsi référé, il a été ordonné qu’elle soit constituée prisonnière." .
+
+doc:O-39-10-1 a rc:Objet ;
+    rdfs:label "Monsieur le syndic Morel ; Martin Dupuis, de Genève" ;
+    rc:folio_debut "39_f99" ;
+    rc:lemme "Monsieur le syndic Morel ; Martin Dupuis, de Genève" ;
+    rc:seqno 1 ;
+    rc:texte "— Dans la maison duquel seigneur syndic est trépassée une fille et l’on dit que c’est de peste, et, ayant ouï leur requête et leur supplication de pouvoir aller avec les non-infects, il a été ordonné qu’ils doivent faire leur terme comme les autres et que, non seulement eux, mais la femme dudit Martin, doivent se tenir serrés pour être exemplaires aux autres." .
+
+doc:O-39-10-10 a rc:Objet ;
+    rdfs:label "Nicolas Pollier" ;
+    rc:folio_debut "39_f100" ;
+    rc:lemme "Nicolas Pollier" ;
+    rc:seqno 10 ;
+    rc:texte "— Sur la supplication par lui présentée, requérant de lui communiquer la vision d’aucuns protocoles étant en la crotte, en payant la peine des seigneurs qui visitèrent iceux protocoles, il a été ordonné que ladite visitation soit commise au seigneur Pierre Tissot, cosyndic." .
+
+doc:O-39-10-11 a rc:Objet ;
+    rdfs:label "Le seigneur Pierre de Rages, hospitalier ; Le seigneur Pierre Bonna, receveur des blés de l’Hôpital" ;
+    rc:folio_debut "39_f100v°" ;
+    rc:lemme "Le seigneur Pierre de Rages, hospitalier ; Le seigneur Pierre Bonna, receveur des blés de l’Hôpital" ;
+    rc:seqno 11 ;
+    rc:texte "— Sur la contention étant entre eux sur la délivrance des blés pour le soulagement de l’Hôpital, dont le receveur a référé qu’il délivre environ 36 coupes de froment par semaine, [demandant] que l’on y ait avis, il a été ordonné (fol. 100v°) que soit mis quelque bon ordre audit Hôpital et arrêt sur la distribution des aumônes, et que l’on ait avis de faire provision de blé." .
+
+doc:O-39-10-12 a rc:Objet ;
+    rdfs:label "Les avoines dues à l’Hôpital ; Des dîmes de la Ville" ;
+    rc:folio_debut "39_f100v°" ;
+    rc:lemme "Les avoines dues à l’Hôpital ; Des dîmes de la Ville" ;
+    rc:seqno 12 ;
+    rc:texte "— Sur la recette desdites avoines, pource que les dîmeurs se lamentent, a été avisé que, nonobstant toutes excuses, le receveur des blés doive se faire payer tant les froments que les avoines." .
+
+doc:O-39-10-13 a rc:Objet ;
+    rdfs:label "La Bonnetière" ;
+    rc:folio_debut "39_f100v°" ;
+    rc:lemme "La Bonnetière" ;
+    rc:seqno 13 ;
+    rc:texte "— Sur ce que l’hospitalier a dit que, suivant la résolution du Conseil, ladite Bonnetière est allée à l’Hôpital, pour icelle retenir et alimenter en icelui, et qu’il fera ce que lui sera commandé, il a été ordonné qu’il doive la retirer audit Hôpital et qu’il ait à lui ministrer les choses à elles nécessaires, et les procureurs dudit Hôpital doivent aviser de retirer son bien audit Hôpital." .
+
+doc:O-39-10-14 a rc:Objet ;
+    rdfs:label "Les Bernois ; Des blés" ;
+    rc:folio_debut "39_f100v°" ;
+    rc:lemme "Les Bernois ; Des blés" ;
+    rc:seqno 14 ;
+    rc:texte "— Sur ce que l’on a entendu que les seigneurs de Berne retirent les blés de leur pays rière eux, craignant quelque empêche etc., il a été ordonné qu’il soit avisé, tant en général qu’en particulier, de retirer et de faire provision de vivres." .
+
+doc:O-39-10-15 a rc:Objet ;
+    rdfs:label "François Miège" ;
+    rc:folio_debut "39_f100v°" ;
+    rc:lemme "François Miège" ;
+    rc:seqno 15 ;
+    rc:texte "— Sur la supplication par lui présentée, exposant que le seigneur trésorier le moleste à payer un quartemps de la pêche du mercredi, qu’il n’a pas tenue, mais ç’a été Pierre Veyron, et qu’il est prêt à payer le temps qu’il a tenu ladite pêche, il a été ordonné que l’amodiation dudit Veyron soit visitée et, cela fait, qu’il doive payer ce à quoi il sera tenu." .
+
+doc:O-39-10-16 a rc:Objet ;
+    rdfs:label "L’ancienne Dolenne" ;
+    rc:folio_debut "39_f101" ;
+    rc:lemme "L’ancienne Dolenne" ;
+    rc:seqno 16 ;
+    rc:texte "— En laquelle il y a grande nécessité causant sa vieillesse. Il a été ordonné, voyant qu’elle est de Genève, qu’elle soit retirée à l’Hôpital et que les procureurs de l’Hôpital suivent à retirer le bien qui pourrait lui appartenir." .
+
+doc:O-39-10-17 a rc:Objet ;
+    rdfs:label "La Robelle, veuve de feu maître Falcon" ;
+    rc:folio_debut "39_f101" ;
+    rc:lemme "La Robelle, veuve de feu maître Falcon" ;
+    rc:seqno 17 ;
+    rc:texte "— À laquelle l’on fait l’aumône à l’Hôpital et, comme l’on a entendu, l’aumône n’est pas bien employée. Il a été ordonné qu’elle lui soit ôtée et distribuée aux autres nécessiteux." .
+
+doc:O-39-10-18 a rc:Objet ;
+    rdfs:label "Ambassadeur à Chambéry" ;
+    rc:folio_debut "39_f101" ;
+    rc:lemme "Ambassadeur à Chambéry" ;
+    rc:seqno 18 ;
+    rc:texte "— La lettre de créance et les instructions faites et baillées au seigneur Curtet ont été lues, pour aller trouver le président de Chambéry, et icelles ont été acceptées, lequel seigneur ambassadeur a référé que, en son dernier voyage, outre ce qui lui a été baillé, il a emprunté à Paris, du seigneur Robert Estienne, 20 écus soleil, priant de les lui faire restituer et qu’il soit ouï en ses comptes." .
+
+doc:O-39-10-19 a rc:Objet ;
+    rdfs:label "Redditions des comptes" ;
+    rc:folio_debut "39_f101" ;
+    rc:lemme "Redditions des comptes" ;
+    rc:seqno 19 ;
+    rc:texte "— Sur ce que les ambassadeurs de la Ville se lamentent qu’ils ne peuvent pas être ouïs en leur comptes, il a été ordonné que tel comptes doivent être rendus vers le trésorier général de la ville." .
+
+doc:O-39-10-2 a rc:Objet ;
+    rdfs:label "Les biens et meubles de la Rebouffière, pour la Ville" ;
+    rc:folio_debut "39_f99v°" ;
+    rc:lemme "Les biens et meubles de la Rebouffière, pour la Ville" ;
+    rc:seqno 2 ;
+    rc:texte "— Sur ce que le seigneur Jean Chautemps, ayant charge sur le gouvernement de l’hôpital pestilentiel, a révélé que la Rebouffière est allée à dieu, de peste, et n’a laissé nul héritier apparent, demandant conseil, (fol. 99v°) il a été ordonné qu’il doive retirer lesdits meubles par inventaire et les garder au nom de la Ville, ainsi qu’il en garde plusieurs autres, ou qu’ils soient remis à l’Hôpital, afin que tels biens soient sûrement gardés." .
+
+doc:O-39-10-20 a rc:Objet ;
+    rdfs:label "Thivent Bellot, anabaptiste, détenu" ;
+    rc:folio_debut "39_f101" ;
+    rc:lemme "Thivent Bellot, anabaptiste, détenu" ;
+    rc:seqno 20 ;
+    rc:texte "— Ayant vu le contenu de ses réponses, il a été ordonné que, avec de grandes remontrances de délaisser telle secte, il soit libéré des prisons et banni perpétuellement de Genève et terres d’icelle, sur peine du fouet, et que ses livres soient brûlés et que l’ordonnance soit proférée à l’Évêché." .
+
+doc:O-39-10-21 a rc:Objet ;
+    rdfs:label "Réponse à Berne" ;
+    rc:folio_debut "39_f101" ;
+    rc:lemme "Réponse à Berne" ;
+    rc:seqno 21 ;
+    rc:texte "— La réponse que l’on envoie à Berne, tant des limites de Peney et de Jussy, et de la dîme de Saint-Jean, a été trouvée raisonnable." .
+
+doc:O-39-10-22 a rc:Objet ;
+    rdfs:label "Benoîte, femme de Pierre Ameaux, détenue" ;
+    rc:folio_debut "39_f101v°" ;
+    rc:lemme "Benoîte, femme de Pierre Ameaux, détenue" ;
+    rc:seqno 22 ;
+    rc:texte "— Le seigneur lieutenant l’a remise, ensemble ses réponses, et, ayant vu icelles, il a été ordonné d’aller la faire répondre." .
+
+doc:O-39-10-3 a rc:Objet ;
+    rdfs:label "Le seigneur Jean Chautemps" ;
+    rc:folio_debut "39_f99v°" ;
+    rc:lemme "Le seigneur Jean Chautemps" ;
+    rc:seqno 3 ;
+    rc:texte "— Et, sur ce qu’il a prié d’être ouï en ses comptes, il a été ordonné que, le plus bref qu’il sera possible, iceux seront vus et il sera procédé en iceux." .
+
+doc:O-39-10-4 a rc:Objet ;
+    rdfs:label "Un homme malade, demeurant vers la Madeleine, étranger" ;
+    rc:folio_debut "39_f99v°" ;
+    rc:lemme "Un homme malade, demeurant vers la Madeleine, étranger" ;
+    rc:seqno 4 ;
+    rc:texte "— Pource que l’on doute qu’il soit infect de peste et qu’il n’a pas moyen de vivre à Genève, il a été ordonné qu’il doive se retirer." .
+
+doc:O-39-10-5 a rc:Objet ;
+    rdfs:label "Andrée, veuve de Jacques Grenier, de Cologny" ;
+    rc:folio_debut "39_f99v°" ;
+    rc:lemme "Andrée, veuve de Jacques Grenier, de Cologny" ;
+    rc:seqno 5 ;
+    rc:texte "— Sur ce qu’elle a supplié que, à Cologny, pendant le temps qu’elle était infecte de peste, furent mis devant sa maison un petit fils et une fille, dont, un certain temps après, la fille mourut et, depuis, par pitié, elle retira ledit enfant et l’a alimenté jusqu’à présent, priant de retirer ledit enfant à l’Hôpital et de lui satisfaire du nourrissage dudit enfant, voyant qu’il a été trouvé etc., il a été ordonné que les procureurs dudit Cologny soient contraints de payer le nourrissage dudit enfant et de retirer icelui, attendu qu’il s’est trouvé audit village." .
+
+doc:O-39-10-6 a rc:Objet ;
+    rdfs:label "Vulliod" ;
+    rc:folio_debut "39_f100" ;
+    rc:lemme "Vulliod" ;
+    rc:seqno 6 ;
+    rc:texte "— Lequel a exposé que, ainsi qu’il fut arrêté par le seigneur syndic Tissot, il dût bailler cent florins petit poids en déduction de ce qu’il doit pour les amodiations qu’il a tenues de la Ville, dont sa maison, qu’il a à Genève, fut expédiée aux procureurs de l’Hôpital, qu’il est prêt à délivrer lesdits cent florins, requérant de l’avoir pour recommandé du reste et d’aviser sur les droits qu’il a remis à la Ville. Il a été ordonné que lesdits cent florins soient recouvrés par le seigneur Michel Varro, receveur de l’Hôpital, et, des droits qu’il a remis (fol. 100) à la Ville, lui en soient rebattus, sur ce qu’il doit, deux écus soleil et il devra payer le reste dès ici à la Saint-Michel prochain venant, sans renoncer aux subhastations, jusqu’à ce qu’il soit entièrement par lui satisfait." .
+
+doc:O-39-10-7 a rc:Objet ;
+    rdfs:label "Dom Georges Poutex, de Satigny, détenu à Genève" ;
+    rc:folio_debut "39_f100" ;
+    rc:lemme "Dom Georges Poutex, de Satigny, détenu à Genève" ;
+    rc:seqno 7 ;
+    rc:texte "— Pource que l’on a entendu que lui, qui est vieux, a suborné une fille et couché avec elle, qui est de l’âge de douze ans, et, ayant ouï le châtelain de Peney, qui révèle qu’il ne veut pas confesser la vérité et qu’il a fait venir ladite fille, il a été ordonné que, après dîner, l’on doive aller faire répondre ledit Poutex et que soit aussi interrogée ladite fille." .
+
+doc:O-39-10-8 a rc:Objet ;
+    rdfs:label "Le seigneur Jean Favre, maître des halles" ;
+    rc:folio_debut "39_f100" ;
+    rc:lemme "Le seigneur Jean Favre, maître des halles" ;
+    rc:seqno 8 ;
+    rc:texte "— Sur ce que sa femme a prié de vouloir entrer à son mari, dessus la ferme de son amodiation des halles, ce qu’il a déboursé pour les réparations d’icelles, il a été ordonné que lesdites réparations soient contrôlées en la Chambre des comptes." .
+
+doc:O-39-10-9 a rc:Objet ;
+    rdfs:label "Le curé d’Aubonne" ;
+    rc:folio_debut "39_f100" ;
+    rc:lemme "Le curé d’Aubonne" ;
+    rc:seqno 9 ;
+    rc:texte "— Ayant entendu sa requête, il a été ordonné que, après dîner, soit demandé le seigneur Jean Lambert, lequel a eu charge des droits des églises, et qu’il doive apporter céans lesdits droits pour les communiquer audit curé, moyennant caution." .
+
+doc:O-39-11-1 a rc:Objet ;
+    rdfs:label "Le juge d’Annecy" ;
+    rc:folio_debut "39_f101v°" ;
+    rc:lemme "Le juge d’Annecy" ;
+    rc:seqno 1 ;
+    rc:texte "— Lequel a écrit une missive, requérant par icelle d’octroyer licence à l’exécuteur des malfaiteurs d’aller exécuter un prisonnier à Annecy, en payant. Il a été ordonné que la licence lui soit octroyée." .
+
+doc:O-39-11-2 a rc:Objet ;
+    rdfs:label "Oblige de discret André Vulliod, de Genève ; 130 florins, 6 sous ; 100 florins" ;
+    rc:folio_debut "39_f102" ;
+    rc:lemme "Oblige de discret André Vulliod, de Genève ; 130 florins, 6 sous ; 100 florins" ;
+    rc:seqno 2 ;
+    rc:texte "— Lequel, tant pour le reste de la dîme de Brens et Langin, les granges qu’il a tenues en amodiation de l’an 1541, que aussi la sortie du blé de l’an 1543, par arrêt fait avec lui, confesse de devoir et de légitimement être tenu de payer, à nos redoutés seigneurs syndics et Conseil de Genève, cent et trente florins, 6 sous, outre cent florins que, aujourd’hui, il a délivrés au seigneur Michel Varro, ancien receveur des blés de la Ville, laquelle somme il promet de payer entre les mains du trésorier général de Genève dès ici à la Saint-Michel prochaine venant, ensemble toutes les promesses, soumissions et renonciations requises. (fol. 102) Et, en outre, il a été ordonné que les clés de la maison dudit Vulliod lui soient remises ; toutefois, que ladite maison doive toujours demeurer hypothéquée et astreinte, sans renoncer aux subhastations, jusqu’à ce qu’il ait entièrement satisfait de la somme restante, qui se monte à 130 florins, 6 sous." .
+
+doc:O-39-12-1 a rc:Objet ;
+    rdfs:label "Barthélemy Bramerel, Jean Losserand, dîmeurs de la Ville" ;
+    rc:folio_debut "39_f102" ;
+    rc:lemme "Barthélemy Bramerel, Jean Losserand, dîmeurs de la Ville" ;
+    rc:seqno 1 ;
+    rc:texte "— Lesquels ont été dîmeurs, il y a deux ans, de la grande dîme, sur la ferme de laquelle il leur fut rebattu, requérant de leur faire faire leur quittance. Et, sur ce, il a été ordonné que, jouxte les résolutions précédentes, ils doivent jurer de révéler tout ce qui appartenait et fut retiré de ladite dîme et, ce fait, l’on avisera sur leur requête." .
+
+doc:O-39-12-10 a rc:Objet ;
+    rdfs:label "Pierre Imber, médecin de Ruan, en Dauphiné, détenu" ;
+    rc:folio_debut "39_f103" ;
+    rc:lemme "Pierre Imber, médecin de Ruan, en Dauphiné, détenu" ;
+    rc:seqno 10 ;
+    rc:texte "— Ayant vu le contenu de ses réponses, par lesquelles il se conste qu’il a proféré quelques paroles, et, attendu la contrition d’icelui, il a été ordonné que, avec de bonnes remontrances, il soit libéré des prions, en payant tous les dépens." .
+
+doc:O-39-12-11 a rc:Objet ;
+    rdfs:label "Dom Georges Poutex, détenu" ;
+    rc:folio_debut "39_f103" ;
+    rc:lemme "Dom Georges Poutex, détenu" ;
+    rc:seqno 11 ;
+    rc:texte "— Lequel a violé une fille et ne veut pas confesser la vérité. Il a été ordonné qu’il soit enferré jusqu’à ce qu’il ait confessé la vérité." .
+
+doc:O-39-12-12 a rc:Objet ;
+    rdfs:label "Une femme détenue" ;
+    rc:folio_debut "39_f103" ;
+    rc:lemme "Une femme détenue" ;
+    rc:seqno 12 ;
+    rc:texte "— Laquelle, quel commandement que lui soit fait, n’obéit nullement, mais revient à tous propos. Il a été ordonné qu’elle soit bannie et de ne pas retourner sans licence, sur peine du fouet." .
+
+doc:O-39-12-13 a rc:Objet ;
+    rdfs:label "Georges Bovagne ; Jean Montagny" ;
+    rc:folio_debut "39_f103" ;
+    rc:lemme "Georges Bovagne ; Jean Montagny" ;
+    rc:seqno 13 ;
+    rc:texte "— Lesquels ont été députés pour terminer, au lieu de Trenchent, mort, et de François Bise, qui est vieux." .
+
+doc:O-39-12-2 a rc:Objet ;
+    rdfs:label "François Chaillot, détenu à Peney" ;
+    rc:folio_debut "39_f102" ;
+    rc:lemme "François Chaillot, détenu à Peney" ;
+    rc:seqno 2 ;
+    rc:texte "— Le châtelain de Peney a référé que, combien que ledit Chaillot ait été convaincu par témoins, il ne veut pas confesser la vérité, demandant conseil. Il a été ordonné que les seigneurs Roset et Pierre Bonna doivent aller audit Peney pour assister audit procès, et il sera comminé et mis à la grue, et, conséquemment, qu’il ait la corde." .
+
+doc:O-39-12-3 a rc:Objet ;
+    rdfs:label "Pâtissiers ; Boulangers ; Boulangères" ;
+    rc:folio_debut "39_f102v°" ;
+    rc:lemme "Pâtissiers ; Boulangers ; Boulangères" ;
+    rc:seqno 3 ;
+    rc:texte "— Lesquels ne vendent pas le pain aux trois places à ce députées ni ne le vendent à la livre. Il a été ordonné que des cries de tel cas soient faites, comme l’année passée." .
+
+doc:O-39-12-4 a rc:Objet ;
+    rdfs:label "Place pour vendre le pain au Molard" ;
+    rc:folio_debut "39_f102v°" ;
+    rc:lemme "Place pour vendre le pain au Molard" ;
+    rc:seqno 4 ;
+    rc:texte "— Il a été ordonné que les seigneurs Henri Aubert et Jean Chautemps, joint l’un des seigneurs syndics, doivent aller visiter le lieu propre au Molard pour vendre le pain et visiter les rières-boutiques qui se font sur le commun." .
+
+doc:O-39-12-5 a rc:Objet ;
+    rdfs:label "Dom Jacques Jacquet" ;
+    rc:folio_debut "39_f102v°" ;
+    rc:lemme "Dom Jacques Jacquet" ;
+    rc:seqno 5 ;
+    rc:texte "— Lequel a prié de lui faire l’aumône et de le retirer à l’Hôpital, voyant que la Ville tient sa chapelle, qui vaut soixante florins par an, et qu’il a remis aucuns droits. Il a été ordonné, voyant qu’il n’est pas de la ville et qu’il s’est retiré à la papisterie jusqu’à présent, que, pour lesdits droits, lui soient donnés cinq florins pour cette fois." .
+
+doc:O-39-12-6 a rc:Objet ;
+    rdfs:label "Claude Dupont ; Les bouchers de la grande boucherie" ;
+    rc:folio_debut "39_f102v°" ;
+    rc:lemme "Claude Dupont ; Les bouchers de la grande boucherie" ;
+    rc:seqno 6 ;
+    rc:texte "— Lesquels ont supplié comment la peste a été en ladite boucherie et ils n’ont pas tué la plupart du temps, et, à présent, ils sont molestés à payer le cens de dix florins qu’ils doivent pour les bancs, requérant les gratifier desdits dix florins pour cette année. Il a été ordonné qu’il soit avisé sur ceux qui sont pauvres et qui ont été infects, que l’on les gratifie de quelque chose, mais que ceux qui ont de quoi aient à payer. " .
+
+doc:O-39-12-7 a rc:Objet ;
+    rdfs:label "— Et que soient faites le..." ;
+    rc:folio_debut "39_f102v°" ;
+    rc:seqno 7 ;
+    rc:texte "— Et que soient faites les remontrances à Mermet Voland, boucher, lequel ne tue pas." .
+
+doc:O-39-12-8 a rc:Objet ;
+    rdfs:label "La veuve de Grenier, de Cologny" ;
+    rc:folio_debut "39_f102v°" ;
+    rc:lemme "La veuve de Grenier, de Cologny" ;
+    rc:seqno 8 ;
+    rc:texte "— Laquelle a prié de lui faire satisfaire de la nourriture d’un enfant trouvé à Cologny, qu’elle alimente et, ayant ouï Pierre Girod, coprocureur de Cologny, il a été ordonné que la commune de Cologny doive le nourrir à ses dépens et que soit appelé, demain, Bernard Janin, l’autre procureur dudit Cologny." .
+
+doc:O-39-12-9 a rc:Objet ;
+    rdfs:label "Les maçons des murailles de la ville" ;
+    rc:folio_debut "39_f103" ;
+    rc:lemme "Les maçons des murailles de la ville" ;
+    rc:seqno 9 ;
+    rc:texte "— Lesquels ont supplié de mettre fin à leurs comptes. Il a été ordonné que les seigneurs à ce commis doivent suivre à mettre fin auxdits comptes." .
+
+doc:O-39-13-1 a rc:Objet ;
+    rdfs:label "La veuve de Grenier, de Cologny" ;
+    rc:folio_debut "39_f103v°" ;
+    rc:lemme "La veuve de Grenier, de Cologny" ;
+    rc:seqno 1 ;
+    rc:texte "— Suivant les résolutions précédentes, il a été ordonné qu’un guet doive aller à Cologny, en la maison de Bernard Janin, des procureurs dudit Cologny, et, en ladite maison, qu’il doive laisser l’enfant trouvé audit Cologny, voyant qu’il ne vient pas obéir à la justice." .
+
+doc:O-39-13-10 a rc:Objet ;
+    rdfs:label "Places pour vendre le pain au Molard" ;
+    rc:folio_debut "39_f104v°" ;
+    rc:lemme "Places pour vendre le pain au Molard" ;
+    rc:seqno 10 ;
+    rc:texte "— Ayant ouï la relation des seigneurs commis etc., il a été ordonné que lesdits bancs soient faits dernier les bancs de la Rivière-de-dessus, contre le Molard, et qu’il ne soit pas permis que soient faits point d’arrières-bancs. Et qu’il soit commandé à Silimand de retourner le passage qui était devant sa maison." .
+
+doc:O-39-13-11 a rc:Objet ;
+    rdfs:label "Les orgues de Rive" ;
+    rc:folio_debut "39_f104v°" ;
+    rc:lemme "Les orgues de Rive" ;
+    rc:seqno 11 ;
+    rc:texte "— Il a été ordonné que lesdites orgues soient vendues au plus offrant." .
+
+doc:O-39-13-12 a rc:Objet ;
+    rdfs:label "Termineurs" ;
+    rc:folio_debut "39_f104v°" ;
+    rc:lemme "Termineurs" ;
+    rc:seqno 12 ;
+    rc:texte "— Suivant la résolution précédente, hon. Georges Bovagne et Jean Montagny ont été députés termineurs, et ils ont fait le serment requis." .
+
+doc:O-39-13-2 a rc:Objet ;
+    rdfs:label "Messire Georges Poutex, détenu" ;
+    rc:folio_debut "39_f103v°" ;
+    rc:lemme "Messire Georges Poutex, détenu" ;
+    rc:seqno 2 ;
+    rc:texte "— Son frère Claude a présenté une supplication en faveur dudit détenu, requérant de vouloir l’admettre à ses défenses hors de prison, moyennant la soumission etc. Il a été ordonné que, aujourd’hui, l’on doive aller suivre à la formation de son procès et puis l’on avisera à ses défenses." .
+
+doc:O-39-13-3 a rc:Objet ;
+    rdfs:label "Le seigneur Claude Savoye" ;
+    rc:folio_debut "39_f104" ;
+    rc:lemme "Le seigneur Claude Savoye" ;
+    rc:seqno 3 ;
+    rc:texte "— Pource que l’on a entendu que son fils Henri va disant aucunes paroles contre le Conseil, comme la femme du seigneur Claude Dupan sait, et, davantage, que l’on a entendu qu’il y a un procès, jadis démené entre lui contre l’évêque moderne de La Baume, mort, duquel il veut s’aider contre Mermet, et que cela serait grandement contre Genève, pourquoi, il a été ordonné que, desdites paroles, en soient prises des informations et que l’on fasse apporter ledit procès céans, et qu’il soit détenu (fol. 104) pour éviter le dommage qui en pourrait survenir à la Ville." .
+
+doc:O-39-13-4 a rc:Objet ;
+    rdfs:label "Le seigneur Jean Goula" ;
+    rc:folio_debut "39_f104" ;
+    rc:lemme "Le seigneur Jean Goula" ;
+    rc:seqno 4 ;
+    rc:texte "— Lequel a exposé que les échutes du passé de Saint-Victor lui ont été baillées et qu’il ne peut pas suivre pour avoir sa raison, causant que les commissaires de Saint-Victor ne suivent pas à leur commission, requérant de l’avoir pour recommandé. Il a été ordonné qu’il soit commandé auxdits commissaires qu’ils aient à suivre à leur commission et de ne pas arrêter, causant lesdites échutes, sans évoquer ledit Goula." .
+
+doc:O-39-13-5 a rc:Objet ;
+    rdfs:label "— Aussi, il a prié de le ..." ;
+    rc:folio_debut "39_f104" ;
+    rc:seqno 5 ;
+    rc:texte "— Aussi, il a prié de le contrôler et de lui faire sa parcelle des dépens par lui supportés en une cause contre la veuve de Guillet. Il a été ordonné que sondit compte soit contrôlé par les seigneurs auditeurs des comptes." .
+
+doc:O-39-13-6 a rc:Objet ;
+    rdfs:label "Le seigneur Pierre Bitry, hôte de la Tour Perse" ;
+    rc:folio_debut "39_f104" ;
+    rc:lemme "Le seigneur Pierre Bitry, hôte de la Tour Perse" ;
+    rc:seqno 6 ;
+    rc:texte "— Lequel a exposé qu’il a vendu du vin de Tournon sept sous le quarteron et que les officiers l’ont gagé pour le ban, requérant de l’avoir pour recommandé. Il a été ordonné que soit demandé le seigneur lieutenant et, icelui ayant ouï, l’on avisera sur lui. Et, depuis, il a été gratifié de la moitié du ban." .
+
+doc:O-39-13-7 a rc:Objet ;
+    rdfs:label "Thivent Bellot, anabatiste" ;
+    rc:folio_debut "39_f104" ;
+    rc:lemme "Thivent Bellot, anabatiste" ;
+    rc:seqno 7 ;
+    rc:texte "— Lequel, depuis peu de temps en ça, fut banni perpétuellement de la ville, sur peine du fouet, et est retourné en ville. Il a été ordonné qu’il soit constitué prisonnier et que, après dîner, l’on doive le faire répondre et qu’il ait le fouet par la maison de l’Évêché, et que ses livres soient brûlés par devant lui, et qu’il soit derechef banni, sur peine de perdition de la vie." .
+
+doc:O-39-13-8 a rc:Objet ;
+    rdfs:label "Jean Morenche, le receveur de Notre-Dame-de-Grâce" ;
+    rc:folio_debut "39_f104v°" ;
+    rc:lemme "Jean Morenche, le receveur de Notre-Dame-de-Grâce" ;
+    rc:seqno 8 ;
+    rc:texte "— Sur la supplication présentée par ledit Morenche, exposant que, jadis, il fut débiteur au couvent de Notre-Dame-de-Grâce de 50 florins de capital et à 30 sous de cens (fol. 104v°) annuel, de laquelle somme capitale il en a payé, en l’an 1531, vingt cinq florins, comme il fait conster par une quittance, requérant l’exempter desdits 25 florins déjà payés, et le seigneur Antoine Aubier, receveur dudit couvent, réplique que le prieur ne pouvait pas faire le dommage du couvent ni passer contrat, sinon qu’il fût en leur chapitre, il a été ordonné que sesdits instruments et quittances soient visités." .
+
+doc:O-39-13-9 a rc:Objet ;
+    rdfs:label "Claude Bressan, amodieur de la dîme de la Ville, de Thônex" ;
+    rc:folio_debut "39_f104v°" ;
+    rc:lemme "Claude Bressan, amodieur de la dîme de la Ville, de Thônex" ;
+    rc:seqno 9 ;
+    rc:texte "— Lequel a supplié comment il a payé le froment de ladite dîme et, causant la froidure et perte qu’il a supportée à ladite dîme, il a prié de lui faire un prix raisonnable de l’avoine. Il a été ordonné que l’on demeure jouxte les résolutions précédentes, c’est qu’il paie le froment et l’avoine." .
+
+
+doc:O-40-99-3 a rc:Objet ;
+    rdfs:label "Suprêmes appellations" ;
+    rc:folio_debut "40_f130v°" ;
+    rc:lemme "Suprêmes appellations" ;
+    rc:seqno 3 ;
+    rc:texte "— Pource que les seigneurs des suprêmes appellations ont cessé de [les] tenir, il a été arrêté que l’on doive les suivre la semaine qui vient." .
+
+doc:O-40-99-4 a rc:Objet ;
+    rdfs:label "Rapport de monsieur Calvin revenant de Strasbourg" ;
+    rc:folio_debut "40_f131" ;
+    rc:lemme "Rapport de monsieur Calvin revenant de Strasbourg" ;
+    rc:seqno 4 ;
+    rc:texte "— [blanc]" .
+
+doc:O-40-99-5 a rc:Objet ;
+    rdfs:label "Dîme de Pregny vendue par noble Marin de Sacconay" ;
+    rc:folio_debut "40_f131v°" ;
+    rc:lemme "Dîme de Pregny vendue par noble Marin de Sacconay" ;
+    rc:seqno 5 ;
+    rc:texte "— Pource que noble Marin de Sacconay a vendu une dîme deux fois et qu’il lui a été écrit plusieurs fois, et qu’il ne veut pas venir à appointement etc., il a été arrêté de visiter, si ladite dîme se recueille rière nous est suffisante, qu’il soit suivi en justice et que le serviteur de l’Hôpital doive suivre et prendre conseil vers le seigneur Roset, et que soient assemblés les deux instruments." .
+
+doc:O-40-99-6 a rc:Objet ;
+    rdfs:label "Maître Claude de Saint-Claude, barbier" ;
+    rc:folio_debut "40_f131v°" ;
+    rc:lemme "Maître Claude de Saint-Claude, barbier" ;
+    rc:seqno 6 ;
+    rc:texte "— Lequel s’est présenté pour aller servir à l’hôpital pestilentiel, moyennant un salaire compétant, disant avoir connaissance de maître Louis Beljaquet. Il a été ordonné que les seigneurs Jean Chautemps et Claude Dupan arrêtent avec lui et qu’il soit admis." .
+
+doc:O-40-99-7 a rc:Objet ;
+    rdfs:label "Les procureurs de l’Hôpital" ;
+    rc:folio_debut "40_f131v°" ;
+    rc:lemme "Les procureurs de l’Hôpital" ;
+    rc:seqno 7 ;
+    rc:texte "— Lesquels ont dit qu’il n’y a point d’argent, requérant de leur faire un mandement pour acheter de la pitance et autre. Il a été arrêté que l’on fasse au receveur, noble P. Bonna, qu’il doive délivrer la somme de deux cents florins, de l’argent qu’il a reçu du blé, et qu’il la délivre à monsieur l’hospitalier." .
+
+doc:O-40-99-8 a rc:Objet ;
+    rdfs:label "Lods de l’évêque et la commission" ;
+    rc:folio_debut "40_f131v°" ;
+    rc:lemme "Lods de l’évêque et la commission" ;
+    rc:seqno 8 ;
+    rc:texte "— Pource que le commissaire Messier a la commission de l’évêque, laquelle est expirée et, toutefois, il recouvre les lods qui ne lui appartiennent pas, il a été arrêté que les seigneurs Roset et Lambert visitent les livres et ce qui en a été fait, pour voir s’il y en a beaucoup encore à faire." .
+
+doc:O-40-99-9 a rc:Objet ;
+    rdfs:label "Réponse de la lettre de Bâle, à cause de de La Grave" ;
+    rc:folio_debut "40_f131v°" ;
+    rc:lemme "Réponse de la lettre de Bâle, à cause de de La Grave" ;
+    rc:seqno 9 ;
+    rc:texte "— Lesquels, après avoir entendu la lettre à eux envoyée à cause de prier noble Bernhard Meyer d’accepter la charge de la cause de monsieur de La Grave etc., il a été arrêté qu’il soit suspendu, jusqu’à ce que l’on ait la réponse dudit seigneur Bernhard etc." .
+
+doc:S-39-1 a rc:Seance ;
+    rdfs:label "39:Jeudi primo januarii 1545" ;
+    rc:date "1545-1-1" ;
+    rc:date_txt "Jeudi primo januarii 1545" ;
+    rc:folio_debut "39_f85v°" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "		le trésorier",
+        "	A. Perrin	J. Philippin	Henri Aubert",
+        "	Do. d’Arlod	P. Tissot	C. Roset",
+        "	Jacques Des Arts	M. Morel	Jean Chautemps",
+        "	Jo. Coquet	A. Gerbel	Antoine Chicand",
+        "	P. Malagnod" ;
+    rc:nom_participant "A. Gerbel",
+        "A. Perrin",
+        "Antoine Chicand",
+        "C. Roset",
+        "Do. d’Arlod",
+        "Henri Aubert",
+        "J. Philippin",
+        "Jacques Des Arts",
+        "Jean Chautemps",
+        "Jo. Coquet",
+        "Les seigneurs syndics",
+        "M. Morel",
+        "P. Malagnod",
+        "P. Tissot",
+        "le trésorier" ;
+    rc:objet doc:O-39-1-1,
+        doc:O-39-1-2,
+        doc:O-39-1-3,
+        doc:O-39-1-4,
+        doc:O-39-1-5,
+        doc:O-39-1-6,
+        doc:O-39-1-7,
+        doc:O-39-1-8 ;
+    rc:position_participant [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Antoine Chicand" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "C. Roset" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 3 ;
+            rc:ligne 7 ;
+            rc:nom_participant "le trésorier" ],
+        [ rc:colonne 4 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Jean Chautemps" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Gerbel" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Do. d’Arlod" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "P. Malagnod" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Henri Aubert" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jo. Coquet" ],
+        [ rc:colonne 3 ;
+            rc:ligne 5 ;
+            rc:nom_participant "M. Morel" ],
+        [ rc:colonne 3 ;
+            rc:ligne 4 ;
+            rc:nom_participant "J. Philippin" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "P. Tissot" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "A. Perrin" ] ;
+    rc:seqno 1 .
+
+
+doc:S-39-4 a rc:Seance ;
+    rdfs:label "39:Le mardi sixième de janvier 1545" ;
+    rc:date "1545-1-6" ;
+    rc:date_txt "Le mardi sixième de janvier 1545" ;
+    rc:folio_debut "39_f90v°" ;
+    rc:ln_participant "		Le seigneur lieutenant, noble Girardin de La Rive",
+        "	Butin		François-Philibert Donzel",
+        "	Jean Cusin		Louis Bernard",
+        "	Jean Malbuisson		François Vulliens",
+        "	Julien Boccard		Mathieu Canal",
+        "	P. Ameaux		P. Verna",
+        "	P. de Rages		Michel Varro",
+        "	de L’Arche		C. Delestra" ;
+    rc:nom_participant "Butin",
+        "C. Delestra",
+        "François Vulliens",
+        "François-Philibert Donzel",
+        "Jean Cusin",
+        "Jean Malbuisson",
+        "Julien Boccard",
+        "Le seigneur lieutenant, noble Girardin de La Rive",
+        "Louis Bernard",
+        "Mathieu Canal",
+        "Michel Varro",
+        "P. Ameaux",
+        "P. Verna",
+        "P. de Rages",
+        "de L’Arche" ;
+    rc:position_participant [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "Julien Boccard" ],
+        [ rc:colonne 2 ;
+            rc:ligne 8 ;
+            rc:nom_participant "P. Ameaux" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Butin" ],
+        [ rc:colonne 2 ;
+            rc:ligne 7 ;
+            rc:nom_participant "Jean Cusin" ],
+        [ rc:colonne 4 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Michel Varro" ],
+        [ rc:colonne 4 ;
+            rc:ligne 6 ;
+            rc:nom_participant "Mathieu Canal" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jean Malbuisson" ],
+        [ rc:colonne 4 ;
+            rc:ligne 8 ;
+            rc:nom_participant "P. Verna" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "François Vulliens" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Le seigneur lieutenant, noble Girardin de La Rive" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "C. Delestra" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "P. de Rages" ],
+        [ rc:colonne 4 ;
+            rc:ligne 7 ;
+            rc:nom_participant "Louis Bernard" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "de L’Arche" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "François-Philibert Donzel" ] ;
+    rc:seqno 4 .
+
+doc:S-39-5 a rc:Seance ;
+    rdfs:label "39:Ledit mardi, Conseil ordinaire, 6 januarii 1545" ;
+    rc:date "1545-1-6" ;
+    rc:date_txt "Ledit mardi, Conseil ordinaire, 6 januarii 1545" ;
+    rc:folio_debut "39_f90v°" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "	C. Dupan	Jean Philippin	A. Gervais",
+        "	Do. d’Arlod	P. Tissot	C. Roset",
+        "	Jacques Des Arts",
+        "	Jean Coquet	A. Gerbel	A. Chicand",
+        "	P. Malagnod" ;
+    rc:nom_participant "A. Chicand",
+        "A. Gerbel",
+        "A. Gervais",
+        "C. Dupan",
+        "C. Roset",
+        "Do. d’Arlod",
+        "Jacques Des Arts",
+        "Jean Coquet",
+        "Jean Philippin",
+        "Les seigneurs syndics",
+        "P. Malagnod",
+        "P. Tissot" ;
+    rc:objet doc:O-39-5-1,
+        doc:O-39-5-2,
+        doc:O-39-5-3,
+        doc:O-39-5-4 ;
+    rc:position_participant [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Chicand" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "C. Dupan" ],
+        [ rc:colonne 3 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jean Philippin" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "C. Roset" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Do. d’Arlod" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "P. Tissot" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean Coquet" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "A. Gervais" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Gerbel" ],
+        [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "P. Malagnod" ] ;
+    rc:seqno 5 .
+
+doc:S-39-6 a rc:Seance ;
+    rdfs:label "39:Jeudi 8 januarii 1545" ;
+    rc:date "1545-1-8" ;
+    rc:date_txt "Jeudi 8 januarii 1545" ;
+    rc:folio_debut "39_f92" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "	A. Perrin",
+        "	C. Dupan	le trésorier Corne",
+        "	Do. d’Arlod	P. Tissot",
+        "	Jacques Des Arts",
+        "	Jean-Ami Curtet	A. Gerbel	Henri Aubert",
+        "	P. Malagnod" ;
+    rc:nom_participant "A. Gerbel",
+        "A. Perrin",
+        "C. Dupan",
+        "Do. d’Arlod",
+        "Henri Aubert",
+        "Jacques Des Arts",
+        "Jean-Ami Curtet",
+        "Les seigneurs syndics",
+        "P. Malagnod",
+        "P. Tissot",
+        "le trésorier Corne" ;
+    rc:objet doc:O-39-6-1,
+        doc:O-39-6-2,
+        doc:O-39-6-3,
+        doc:O-39-6-4 ;
+    rc:position_participant [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "C. Dupan" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "P. Tissot" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Do. d’Arlod" ],
+        [ rc:colonne 3 ;
+            rc:ligne 5 ;
+            rc:nom_participant "le trésorier Corne" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "A. Perrin" ],
+        [ rc:colonne 2 ;
+            rc:ligne 7 ;
+            rc:nom_participant "P. Malagnod" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Gerbel" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean-Ami Curtet" ],
+        [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Henri Aubert" ] ;
+    rc:seqno 6 .
+
+doc:S-39-7 a rc:Seance ;
+    rdfs:label "39:Vendredi 9 januarii 1545" ;
+    rc:date "1545-1-9" ;
+    rc:date_txt "Vendredi 9 januarii 1545" ;
+    rc:folio_debut "39_f92v°" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "	C. Dupan	le trésorier Corne	Henri Aubert",
+        "	Do. d’Arlod		Pernet Defosses",
+        "	Jacques Des Arts",
+        "	Jean Coquet	A. Gerbel	A. Chicand",
+        "	Jean-Ami Bothollier	P. Tissot	C. Roset",
+        "	P. Malagnod" ;
+    rc:nom_participant "A. Chicand",
+        "A. Gerbel",
+        "C. Dupan",
+        "C. Roset",
+        "Do. d’Arlod",
+        "Henri Aubert",
+        "Jacques Des Arts",
+        "Jean Coquet",
+        "Jean-Ami Bothollier",
+        "Les seigneurs syndics",
+        "P. Malagnod",
+        "P. Tissot",
+        "Pernet Defosses",
+        "le trésorier Corne" ;
+    rc:objet doc:O-39-7-1,
+        doc:O-39-7-10,
+        doc:O-39-7-11,
+        doc:O-39-7-12,
+        doc:O-39-7-13,
+        doc:O-39-7-14,
+        doc:O-39-7-15,
+        doc:O-39-7-16,
+        doc:O-39-7-17,
+        doc:O-39-7-18,
+        doc:O-39-7-19,
+        doc:O-39-7-2,
+        doc:O-39-7-20,
+        doc:O-39-7-21,
+        doc:O-39-7-22,
+        doc:O-39-7-23,
+        doc:O-39-7-24,
+        doc:O-39-7-25,
+        doc:O-39-7-26,
+        doc:O-39-7-27,
+        doc:O-39-7-28,
+        doc:O-39-7-29,
+        doc:O-39-7-3,
+        doc:O-39-7-30,
+        doc:O-39-7-31,
+        doc:O-39-7-4,
+        doc:O-39-7-5,
+        doc:O-39-7-6,
+        doc:O-39-7-7,
+        doc:O-39-7-8,
+        doc:O-39-7-9 ;
+    rc:position_participant [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "C. Roset" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "P. Tissot" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean Coquet" ],
+        [ rc:colonne 2 ;
+            rc:ligne 7 ;
+            rc:nom_participant "P. Malagnod" ],
+        [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Pernet Defosses" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Do. d’Arlod" ],
+        [ rc:colonne 4 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Henri Aubert" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Jean-Ami Bothollier" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "C. Dupan" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Chicand" ],
+        [ rc:colonne 3 ;
+            rc:ligne 5 ;
+            rc:nom_participant "le trésorier Corne" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Gerbel" ] ;
+    rc:seqno 7 .
+
+doc:S-39-8 a rc:Seance ;
+    rdfs:label "39:Samedi 10 januarii 1545" ;
+    rc:date "1545-1-10" ;
+    rc:date_txt "Samedi 10 januarii 1545" ;
+    rc:folio_debut "39_f97v°" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "		le trésorier",
+        "	Do. d’Arlod	A. Gerbel	C. Roset",
+        "	Ja. Des Arts	P. Tissot	A. Gervais",
+        "	P. Bonna		Jean Chautemps" ;
+    rc:nom_participant "A. Gerbel",
+        "A. Gervais",
+        "C. Roset",
+        "Do. d’Arlod",
+        "Ja. Des Arts",
+        "Jean Chautemps",
+        "Les seigneurs syndics",
+        "P. Bonna",
+        "P. Tissot",
+        "le trésorier" ;
+    rc:objet doc:O-39-8-1 ;
+    rc:position_participant [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Gerbel" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jean Chautemps" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Ja. Des Arts" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Do. d’Arlod" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "P. Tissot" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "A. Gervais" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "P. Bonna" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "C. Roset" ],
+        [ rc:colonne 3 ;
+            rc:ligne 5 ;
+            rc:nom_participant "le trésorier" ] ;
+    rc:seqno 8 .
+
+doc:S-39-9 a rc:Seance ;
+    rdfs:label "39:Lundi 12 januarii 1545" ;
+    rc:date "1545-1-12" ;
+    rc:date_txt "Lundi 12 januarii 1545" ;
+    rc:folio_debut "39_f98" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "	C. Dupan		A. Gervais",
+        "	Do. d’Arlod	J. Philippin	Pernet Defosses",
+        "	Jacques Des Arts	le trésorier	Henri Aubert",
+        "	Jean Coquet	A. Gerbel	A. Chicand",
+        "	Jean-Ami Curtet	P. Tissot	Claude Roset",
+        "	P. Bonna		Jean Chautemps",
+        "	P. Malagnod" ;
+    rc:nom_participant "A. Chicand",
+        "A. Gerbel",
+        "A. Gervais",
+        "C. Dupan",
+        "Claude Roset",
+        "Do. d’Arlod",
+        "Henri Aubert",
+        "J. Philippin",
+        "Jacques Des Arts",
+        "Jean Chautemps",
+        "Jean Coquet",
+        "Jean-Ami Curtet",
+        "Les seigneurs syndics",
+        "P. Bonna",
+        "P. Malagnod",
+        "P. Tissot",
+        "Pernet Defosses",
+        "le trésorier" ;
+    rc:objet doc:O-39-9-1,
+        doc:O-39-9-2,
+        doc:O-39-9-3,
+        doc:O-39-9-4,
+        doc:O-39-9-5,
+        doc:O-39-9-6,
+        doc:O-39-9-7,
+        doc:O-39-9-8 ;
+    rc:position_participant [ rc:colonne 3 ;
+            rc:ligne 6 ;
+            rc:nom_participant "le trésorier" ],
+        [ rc:colonne 2 ;
+            rc:ligne 8 ;
+            rc:nom_participant "P. Malagnod" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Chicand" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Gerbel" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "C. Dupan" ],
+        [ rc:colonne 3 ;
+            rc:ligne 4 ;
+            rc:nom_participant "J. Philippin" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Jean-Ami Curtet" ],
+        [ rc:colonne 4 ;
+            rc:ligne 6 ;
+            rc:nom_participant "Henri Aubert" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "P. Tissot" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean Coquet" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 2 ;
+            rc:ligne 7 ;
+            rc:nom_participant "P. Bonna" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Pernet Defosses" ],
+        [ rc:colonne 4 ;
+            rc:ligne 7 ;
+            rc:nom_participant "Jean Chautemps" ],
+        [ rc:colonne 4 ;
+            rc:ligne 5 ;
+            rc:nom_participant "A. Gervais" ],
+        [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Claude Roset" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Do. d’Arlod" ] ;
+    rc:seqno 9 .
+
+doc:S-40-1 a rc:Seance ;
+    rdfs:label "40:Dimanche huitième de février 1545" ;
+    rc:date "1545-2-8" ;
+    rc:date_txt "Dimanche huitième de février 1545" ;
+    rc:folio_debut "40_f1v°" ;
+    rc:ln_participant "		Antoine Gerbel	",
+        "		Jean Philippin",
+        "		Michel Morel",
+        "		Pierre Tissot",
+        "		Présent les seigneurs anciens syndics	" ;
+    rc:nom_participant "Antoine Gerbel",
+        "Jean Philippin",
+        "Michel Morel",
+        "Pierre Tissot",
+        "Présent les seigneurs anciens syndics" ;
+    rc:objet doc:O-40-1-1,
+        doc:O-40-1-10,
+        doc:O-40-1-11,
+        doc:O-40-1-12,
+        doc:O-40-1-13,
+        doc:O-40-1-14,
+        doc:O-40-1-15,
+        doc:O-40-1-16,
+        doc:O-40-1-17,
+        doc:O-40-1-18,
+        doc:O-40-1-19,
+        doc:O-40-1-2,
+        doc:O-40-1-20,
+        doc:O-40-1-21,
+        doc:O-40-1-22,
+        doc:O-40-1-23,
+        doc:O-40-1-24,
+        doc:O-40-1-3,
+        doc:O-40-1-4,
+        doc:O-40-1-5,
+        doc:O-40-1-6,
+        doc:O-40-1-7,
+        doc:O-40-1-8,
+        doc:O-40-1-9 ;
+    rc:position_participant [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Pierre Tissot" ],
+        [ rc:colonne 3 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jean Philippin" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Antoine Gerbel" ],
+        [ rc:colonne 3 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Michel Morel" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Présent les seigneurs anciens syndics" ] ;
+    rc:seqno 1 .
+
+doc:S-40-10 a rc:Seance ;
+    rdfs:label "40:Jeudi 12 februarii 1545" ;
+    rc:date "1545-2-12" ;
+    rc:date_txt "Jeudi 12 februarii 1545" ;
+    rc:folio_debut "40_f12" ;
+    rc:ln_participant "			P. Verna",
+        "		Les seigneurs syndics",
+        "	B. Messier	Jacques Des Arts	C. Roset",
+        "	C. Dupan	Domenne d’Arlod	M. Morel",
+        "	Guillaume Benoît		P. Malagnod",
+        "	Jean Lambert	Jean-Ami Curtet	Jean Philippin",
+        "	Louis Bernard		J. Chautemps",
+        "	P. Ameaux		H. Aubert",
+        "	P. Bonna		A : Gervais" ;
+    rc:nom_participant "A : Gervais",
+        "B. Messier",
+        "C. Dupan",
+        "C. Roset",
+        "Domenne d’Arlod",
+        "Guillaume Benoît",
+        "H. Aubert",
+        "J. Chautemps",
+        "Jacques Des Arts",
+        "Jean Lambert",
+        "Jean Philippin",
+        "Jean-Ami Curtet",
+        "Les seigneurs syndics",
+        "Louis Bernard",
+        "M. Morel",
+        "P. Ameaux",
+        "P. Bonna",
+        "P. Malagnod",
+        "P. Verna" ;
+    rc:objet doc:O-40-10-1,
+        doc:O-40-10-10,
+        doc:O-40-10-11,
+        doc:O-40-10-12,
+        doc:O-40-10-13,
+        doc:O-40-10-2,
+        doc:O-40-10-3,
+        doc:O-40-10-4,
+        doc:O-40-10-5,
+        doc:O-40-10-6,
+        doc:O-40-10-7,
+        doc:O-40-10-8,
+        doc:O-40-10-9 ;
+    rc:position_participant [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "P. Ameaux" ],
+        [ rc:colonne 4 ;
+            rc:ligne 7 ;
+            rc:nom_participant "J. Chautemps" ],
+        [ rc:colonne 4 ;
+            rc:ligne 8 ;
+            rc:nom_participant "P. Malagnod" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 4 ;
+            rc:ligne 5 ;
+            rc:nom_participant "A : Gervais" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "C. Roset" ],
+        [ rc:colonne 2 ;
+            rc:ligne 7 ;
+            rc:nom_participant "Louis Bernard" ],
+        [ rc:colonne 4 ;
+            rc:ligne 9 ;
+            rc:nom_participant "P. Verna" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean Lambert" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "P. Bonna" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean Philippin" ],
+        [ rc:colonne 3 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "B. Messier" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "Jean-Ami Curtet" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "M. Morel" ],
+        [ rc:colonne 2 ;
+            rc:ligne 8 ;
+            rc:nom_participant "Guillaume Benoît" ],
+        [ rc:colonne 4 ;
+            rc:ligne 6 ;
+            rc:nom_participant "H. Aubert" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Domenne d’Arlod" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "C. Dupan" ] ;
+    rc:seqno 10 .
+
+
+
+doc:S-40-99 a rc:Seance ;
+    rdfs:label "40:Le jeudi 28 maii 1545" ;
+    rc:date "1545-5-28" ;
+    rc:date_txt "Le jeudi 28 maii 1545" ;
+    rc:folio_debut "40_f130v°" ;
+    rc:ln_participant "		Les seigneurs syndics",
+        "	Claude Dupan		Jo. Chautemps",
+        "	Jo. Coquet	Domenne d’Arlod	Claude Roset",
+        "	Jo. Lambert	Jacques Des Arts	A. Gervais",
+        "	Louis Bernard",
+        "	P. Ameaux",
+        "	P. Bonna	le tresorier	P. Verna",
+        "	noble Pierre Tissot	noble Jean-Ami Curtet	A. Chicand" ;
+    rc:nom_participant "A. Chicand",
+        "A. Gervais",
+        "Claude Dupan",
+        "Claude Roset",
+        "Domenne d’Arlod",
+        "Jacques Des Arts",
+        "Jo. Chautemps",
+        "Jo. Coquet",
+        "Jo. Lambert",
+        "Les seigneurs syndics",
+        "Louis Bernard",
+        "P. Ameaux",
+        "P. Bonna",
+        "P. Verna",
+        "le tresorier",
+        "noble Jean-Ami Curtet",
+        "noble Pierre Tissot" ;
+    rc:objet doc:O-40-99-1,
+        doc:O-40-99-2,
+        doc:O-40-99-3,
+        doc:O-40-99-4,
+        doc:O-40-99-5,
+        doc:O-40-99-6,
+        doc:O-40-99-7,
+        doc:O-40-99-8,
+        doc:O-40-99-9 ;
+    rc:position_participant [ a rc:Position_Participant ; rc:colonne 2 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jo. Lambert" ],
+        [ rc:colonne 3 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Domenne d’Arlod" ],
+        [ rc:colonne 4 ;
+            rc:ligne 6 ;
+            rc:nom_participant "P. Verna" ],
+        [ rc:colonne 4 ;
+            rc:ligne 4 ;
+            rc:nom_participant "A. Gervais" ],
+        [ rc:colonne 3 ;
+            rc:ligne 2 ;
+            rc:nom_participant "noble Jean-Ami Curtet" ],
+        [ rc:colonne 2 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Claude Dupan" ],
+        [ rc:colonne 2 ;
+            rc:ligne 6 ;
+            rc:nom_participant "P. Bonna" ],
+        [ rc:colonne 2 ;
+            rc:ligne 8 ;
+            rc:nom_participant "Louis Bernard" ],
+        [ rc:colonne 3 ;
+            rc:ligne 4 ;
+            rc:nom_participant "Jacques Des Arts" ],
+        [ rc:colonne 3 ;
+            rc:ligne 6 ;
+            rc:nom_participant "le tresorier" ],
+        [ rc:colonne 2 ;
+            rc:ligne 2 ;
+            rc:nom_participant "noble Pierre Tissot" ],
+        [ rc:colonne 2 ;
+            rc:ligne 7 ;
+            rc:nom_participant "P. Ameaux" ],
+        [ rc:colonne 4 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Claude Roset" ],
+        [ rc:colonne 4 ;
+            rc:ligne 5 ;
+            rc:nom_participant "Jo. Chautemps" ],
+        [ rc:colonne 3 ;
+            rc:ligne 1 ;
+            rc:nom_participant "Les seigneurs syndics" ],
+        [ rc:colonne 4 ;
+            rc:ligne 2 ;
+            rc:nom_participant "A. Chicand" ],
+        [ rc:colonne 2 ;
+            rc:ligne 3 ;
+            rc:nom_participant "Jo. Coquet" ] ;
+    rc:seqno 99 .
+

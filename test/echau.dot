@@ -1,0 +1,66 @@
+digraph {
+  rankdir="BT"
+
+    
+    // Restrictions
+    
+    
+// owl:someValuesFrom charge http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_surveillance_de_nuit
+ "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_groupe" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_surveillance_de_nuit" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_groupe'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n08aa55efa79d4e409cce379d3d1938bdb1'))
+// owl:someValuesFrom charge http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Surveillance_intérieure
+ "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_policier" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Surveillance_intérieure" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_policier'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n08aa55efa79d4e409cce379d3d1938bdb3'))
+// owl:allValuesFrom membre http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_personne
+ "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_groupe" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_personne" [color = "blue" label="∀ membre"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_groupe'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n08aa55efa79d4e409cce379d3d1938bdb2'))
+// owl:allValuesFrom membre n08aa55efa79d4e409cce379d3d1938bdb6
+ "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Échauguet" -> "n08aa55efa79d4e409cce379d3d1938bdb6" [color = "blue" label="∀ membre"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Échauguet'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n08aa55efa79d4e409cce379d3d1938bdb5'))
+// owl:hasValue membre_de http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil_de_Genève
+ "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Membre_du_Conseil" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil_de_Genève" [color = "blue" label="membre_de has value"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Membre_du_Conseil'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n08aa55efa79d4e409cce379d3d1938bdb4'))
+// owl:hasValue membre_de http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil_de_Genève
+ "n08aa55efa79d4e409cce379d3d1938bdb6" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil_de_Genève" [color = "green" label="membre_de has value"]
+
+    
+    /// Datatype Property Restrictions -> Attributes
+    
+    
+
+    
+    /// Domains and Ranges
+    
+    
+
+    
+    /// Subclasses
+    
+    
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_groupe" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Échauguet" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_personne" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Personne" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_policier" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Personne" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Membre_du_Conseil" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Personne" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_surveillance_de_nuit" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Activité" [ arrowhead="onormal", color="red"]; 
+  "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Surveillance_intérieure" -> "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Activité" [ arrowhead="onormal", color="red"]; 
+
+
+// Labels
+
+
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Activité" [shape="record", color="black", label="Activité", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Surveillance_intérieure" [shape="record", color="black", label="Surveillance_intérieure", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil_de_Genève" [shape="record", color="black", label="Conseil_de_Genève", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Conseil" [shape="record", color="black", label="Conseil", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Personne" [shape="record", color="black", label="Personne", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_surveillance_de_nuit" [shape="record", color="black", label="Guet_surveillance_de_nuit", height=0] ;
+   "n08aa55efa79d4e409cce379d3d1938bdb6" [shape="record", color="grey", label="  ", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Membre_du_Conseil" [shape="record", color="black", label="Membre_du_Conseil", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Groupe" [shape="record", color="black", label="Groupe", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_groupe" [shape="record", color="black", label="Guet_groupe", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_personne" [shape="record", color="black", label="garde", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Guet_policier" [shape="record", color="black", label="Guet_policier", height=0] ;
+   "http://cui.unige.ch/rcnum/onto/echau-guet.ttl/Échauguet" [shape="record", color="black", label="Échauguet", height=0] ;
+}

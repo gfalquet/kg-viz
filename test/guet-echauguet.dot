@@ -1,0 +1,119 @@
+digraph {
+  rankdir="BT"
+
+    
+    // Restrictions
+    
+    
+// owl:someValuesFrom charge ncc988ed5aa344e3cbf8037cf076dc357b2
+ "http://purl.org/rcnum/onto/rc#Garde_de_Porte" -> "ncc988ed5aa344e3cbf8037cf076dc357b2" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Garde_de_Porte'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b1'))
+// owl:someValuesFrom charge ncc988ed5aa344e3cbf8037cf076dc357b7
+ "http://purl.org/rcnum/onto/rc#Garde_de_Tour" -> "ncc988ed5aa344e3cbf8037cf076dc357b7" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Garde_de_Tour'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b6'))
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Ville
+ "http://purl.org/rcnum/onto/rc#Guet_1" -> "http://purl.org/rcnum/onto/rc#Ville" [color = "blue" label="∃ objet"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Guet_1'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b11'))
+// owl:someValuesFrom charge http://purl.org/rcnum/onto/rc#Guet_1
+ "http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Guet_1" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Guet_2'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b12'))
+// owl:someValuesFrom charge http://purl.org/rcnum/onto/rc#Surveillance
+ "http://purl.org/rcnum/onto/rc#Guet_3" -> "http://purl.org/rcnum/onto/rc#Surveillance" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Guet_3'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b14'))
+// owl:someValuesFrom charge ncc988ed5aa344e3cbf8037cf076dc357b16
+ "http://purl.org/rcnum/onto/rc#Guet_4" -> "ncc988ed5aa344e3cbf8037cf076dc357b16" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Guet_4'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b15'))
+// owl:someValuesFrom charge http://purl.org/rcnum/onto/rc#Échauguet_2
+ "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "http://purl.org/rcnum/onto/rc#Échauguet_2" [color = "blue" label="∃ charge"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Échauguet_1'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b20'))
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Guet_2
+ "http://purl.org/rcnum/onto/rc#Échauguet_2" -> "http://purl.org/rcnum/onto/rc#Guet_2" [color = "blue" label="∃ objet"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Échauguet_2'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b26'))
+// owl:allValuesFrom membre http://purl.org/rcnum/onto/rc#Guet_3
+ "http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Guet_3" [color = "blue" label="∀ membre"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Guet_2'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b13'))
+// owl:allValuesFrom membre ncc988ed5aa344e3cbf8037cf076dc357b22
+ "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "ncc988ed5aa344e3cbf8037cf076dc357b22" [color = "blue" label="∀ membre"] // shortcut 1
+///// removed (rdflib.term.URIRef('http://purl.org/rcnum/onto/rc#Échauguet_1'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('ncc988ed5aa344e3cbf8037cf076dc357b21'))
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Extérieur_Ville
+ "ncc988ed5aa344e3cbf8037cf076dc357b2" -> "http://purl.org/rcnum/onto/rc#Extérieur_Ville" [color = "black" label="∃ objet"] // shortcut 1
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Extérieur_Ville
+ "ncc988ed5aa344e3cbf8037cf076dc357b7" -> "http://purl.org/rcnum/onto/rc#Extérieur_Ville" [color = "black" label="∃ objet"] // shortcut 1
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Population
+ "ncc988ed5aa344e3cbf8037cf076dc357b16" -> "http://purl.org/rcnum/onto/rc#Population" [color = "black" label="∃ objet"] // shortcut 1
+// owl:someValuesFrom membre_de http://purl.org/rcnum/onto/rc#Conseil_de_Genève
+ "ncc988ed5aa344e3cbf8037cf076dc357b22" -> "http://purl.org/rcnum/onto/rc#Conseil_de_Genève" [color = "black" label="∃ membre_de"] // shortcut 1
+
+    
+    /// Datatype Property Restrictions -> Attributes
+    
+    
+
+    
+    /// Domains and Ranges
+    
+    
+   "ncc988ed5aa344e3cbf8037cf076dc357b2" [label="AND", shape="rectangle", color="green"] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b7" [label="AND", shape="rectangle", color="green"] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b16" [label="AND", shape="rectangle", color="green"] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b22" [label="AND", shape="rectangle", color="green"] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b2" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]
+   "ncc988ed5aa344e3cbf8037cf076dc357b7" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]
+   "ncc988ed5aa344e3cbf8037cf076dc357b16" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]
+   "ncc988ed5aa344e3cbf8037cf076dc357b22" -> "http://purl.org/rcnum/onto/rc#Personne" [ arrowhead="onormal", color="red"]
+
+    
+    /// Subclasses
+    
+    
+  "http://purl.org/rcnum/onto/rc#Conseil" -> "http://purl.org/rcnum/onto/rc#Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Population" -> "http://purl.org/rcnum/onto/rc#Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "http://purl.org/rcnum/onto/rc#Groupe" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Conseil_de_Genève" -> "http://purl.org/rcnum/onto/rc#Conseil" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Extérieur_Ville" -> "http://purl.org/rcnum/onto/rc#Lieu" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Porte" -> "http://purl.org/rcnum/onto/rc#Lieu" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Ville" -> "http://purl.org/rcnum/onto/rc#Lieu" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Garde_de_Porte" -> "http://purl.org/rcnum/onto/rc#Guet_3" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Garde_de_Tour" -> "http://purl.org/rcnum/onto/rc#Guet_3" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_1" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Surveillance_de_Nuit" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_3" -> "http://purl.org/rcnum/onto/rc#Personne" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_4" -> "http://purl.org/rcnum/onto/rc#Personne" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Surveillance" -> "http://purl.org/rcnum/onto/rc#Activité" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Échauguet_2" -> "http://purl.org/rcnum/onto/rc#Surveillance_de_Nuit" [ arrowhead="onormal", color="red"]; 
+
+    
+    // Annotations
+    
+    
+
+
+// Labels
+
+
+   "http://purl.org/rcnum/onto/rc#Personne" [shape="record", label="{Personne}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Porte" [shape="record", label="{Porte}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Activité" [shape="record", label="{Activité}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Garde_de_Porte" [shape="record", label="{Garde_de_Porte|label:\l\ - garde de porte\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Lieu" [shape="record", label="{Lieu}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Groupe" [shape="record", label="{Groupe}", height=0] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b7" [shape="record", label="{AND}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_4" [shape="record", label="{Guet_4|label:\l\ - guet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Ville" [shape="record", label="{Ville}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Échauguet_1" [shape="record", label="{Échauguet_1|label:\l\ - échauguet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Surveillance_de_Nuit" [shape="record", label="{Surveillance_de_Nuit}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Surveillance" [shape="record", label="{Surveillance}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_3" [shape="record", label="{Guet_3|label:\l\ - guet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_2" [shape="record", label="{Guet_2|label:\l\ - guet\l - échauguet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Garde_de_Tour" [shape="record", label="{Garde_de_Tour|label:\l\ - garde de tour\l}", height=0] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b16" [shape="record", label="{AND}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Conseil_de_Genève" [shape="record", label="{Conseil_de_Genève}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Extérieur_Ville" [shape="record", label="{Extérieur_Ville}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Échauguet_2" [shape="record", label="{Échauguet_2|label:\l\ - échauguet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_1" [shape="record", label="{Guet_1|label:\l\ - guet\l}", height=0] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b22" [shape="record", label="{AND}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Conseil" [shape="record", label="{Conseil}", height=0] ;
+   "ncc988ed5aa344e3cbf8037cf076dc357b2" [shape="record", label="{AND}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Population" [shape="record", label="{Population}", height=0] ;
+}

@@ -1,0 +1,23 @@
+digraph {
+	graph [bb="0,0,299.24,213",
+		rankdir=BT
+	];
+	node [label="\N"];
+	"http://purl.org/rcnum/onto/rc#Guet_1"	[height=0.5,
+		pos="149.62,106.5",
+		width=4.1561];
+	"http://purl.org/rcnum/onto/rc#Ville"	[height=0.5,
+		pos="149.62,195",
+		width=3.9144];
+	"http://purl.org/rcnum/onto/rc#Guet_1" -> "http://purl.org/rcnum/onto/rc#Ville"	[color=blue,
+		label="∃ objet",
+		lp="170.24,150.75",
+		pos="e,149.62,176.65 149.62,124.59 149.62,136.24 149.62,151.95 149.62,165.48"];
+	"http://purl.org/rcnum/onto/rc#Guet_2"	[height=0.5,
+		pos="149.62,18",
+		width=4.1561];
+	"http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Guet_1"	[color=blue,
+		label="∃ charge",
+		lp="174.74,62.25",
+		pos="e,149.62,88.15 149.62,36.09 149.62,47.742 149.62,63.453 149.62,76.981"];
+}

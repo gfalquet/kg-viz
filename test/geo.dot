@@ -1,0 +1,126 @@
+digraph {
+  rankdir="BT"
+
+    
+    // Restrictions
+    
+    
+// owl:someValuesFrom feature class http://www.w3.org/2004/02/skos/core#ConceptScheme
+ "https://www.geonames.org/ontology#GeonamesFeature" -> "http://www.w3.org/2004/02/skos/core#ConceptScheme" [color = "blue" label="∃ feature class"] // shortcut 1
+///// removed (rdflib.term.URIRef('https://www.geonames.org/ontology#GeonamesFeature'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n10f887f2561e426e810bba7dfe2f4600b8'))
+// owl:allValuesFrom level 1 administrative parent n10f887f2561e426e810bba7dfe2f4600b27
+ "https://www.geonames.org/ontology#Bbracadabra" -> "n10f887f2561e426e810bba7dfe2f4600b27" [color = "blue" label="∀ level 1 administrative parent"] // shortcut 1
+///// removed (rdflib.term.URIRef('https://www.geonames.org/ontology#Bbracadabra'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n10f887f2561e426e810bba7dfe2f4600b26'))
+// owl:maxCardinality level 1 administrative parent 1
+ "https://www.geonames.org/ontology#GeonamesFeature" -> "owl:Thing" [color = "blue" label="≤ 1 level 1 administrative parent"] // shortcut 1
+///// removed (rdflib.term.URIRef('https://www.geonames.org/ontology#GeonamesFeature'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n10f887f2561e426e810bba7dfe2f4600b9'))
+// owl:maxCardinality level 2 administrative parent 1
+ "https://www.geonames.org/ontology#GeonamesFeature" -> "owl:Thing" [color = "blue" label="≤ 1 level 2 administrative parent"] // shortcut 1
+///// removed (rdflib.term.URIRef('https://www.geonames.org/ontology#GeonamesFeature'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n10f887f2561e426e810bba7dfe2f4600b10'))
+// owl:maxCardinality level 3 administrative parent 1
+ "https://www.geonames.org/ontology#GeonamesFeature" -> "owl:Thing" [color = "blue" label="≤ 1 level 3 administrative parent"] // shortcut 1
+///// removed (rdflib.term.URIRef('https://www.geonames.org/ontology#GeonamesFeature'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n10f887f2561e426e810bba7dfe2f4600b11'))
+// owl:maxCardinality level 4 administrative parent 1
+ "https://www.geonames.org/ontology#GeonamesFeature" -> "owl:Thing" [color = "blue" label="≤ 1 level 4 administrative parent"] // shortcut 1
+///// removed (rdflib.term.URIRef('https://www.geonames.org/ontology#GeonamesFeature'), rdflib.term.URIRef('http://www.w3.org/2000/01/rdf-schema#subClassOf'), rdflib.term.BNode('n10f887f2561e426e810bba7dfe2f4600b12'))
+// owl:maxCardinality level 1 administrative parent 1
+ "n10f887f2561e426e810bba7dfe2f4600b19" -> "owl:Thing" [color = "black" label="≤ 1 level 1 administrative parent"] // shortcut 1
+// owl:maxCardinality level 2 administrative parent 1
+ "n10f887f2561e426e810bba7dfe2f4600b19" -> "owl:Thing" [color = "black" label="≤ 1 level 2 administrative parent"] // shortcut 1
+// owl:someValuesFrom level 2 administrative parent https://www.geonames.org/ontology#Abracadabra
+ "n10f887f2561e426e810bba7dfe2f4600b27" -> "https://www.geonames.org/ontology#Abracadabra" [color = "green" label="∃ level 2 administrative parent"]
+// owl:hasValue feature code https://www.geonames.org/ontology#A.ADM1
+ "n10f887f2561e426e810bba7dfe2f4600b3" -> "https://www.geonames.org/ontology#A.ADM1" [color = "green" label="feature code has value"]
+// owl:hasValue feature code https://www.geonames.org/ontology#A.ADM2
+ "n10f887f2561e426e810bba7dfe2f4600b4" -> "https://www.geonames.org/ontology#A.ADM2" [color = "green" label="feature code has value"]
+// owl:hasValue feature code https://www.geonames.org/ontology#A.ADM3
+ "n10f887f2561e426e810bba7dfe2f4600b5" -> "https://www.geonames.org/ontology#A.ADM3" [color = "green" label="feature code has value"]
+// owl:hasValue feature code https://www.geonames.org/ontology#A.ADM4
+ "n10f887f2561e426e810bba7dfe2f4600b6" -> "https://www.geonames.org/ontology#A.ADM4" [color = "green" label="feature code has value"]
+// owl:hasValue feature code https://www.geonames.org/ontology#A.PCLI
+ "n10f887f2561e426e810bba7dfe2f4600b7" -> "https://www.geonames.org/ontology#A.PCLI" [color = "green" label="feature code has value"]
+
+    
+    /// Datatype Property Restrictions -> Attributes
+    
+    
+// subclass of restriction on datatype https://www.geonames.org/ontology#GeonamesFeature https://www.geonames.org/ontology#geonamesID owl:Thing
+// subclass of restriction on datatype https://www.geonames.org/ontology#GeonamesFeature https://www.geonames.org/ontology#lat owl:Thing
+// subclass of restriction on datatype https://www.geonames.org/ontology#GeonamesFeature https://www.geonames.org/ontology#long owl:Thing
+// subclass of restriction on datatype https://www.geonames.org/ontology#GeonamesFeature https://www.geonames.org/ontology#name owl:Thing
+// subclass of restriction on datatype https://www.geonames.org/ontology#GeonamesFeature https://www.geonames.org/ontology#countryCode owl:Thing
+// subclass of restriction on datatype https://www.geonames.org/ontology#GeonamesFeature https://www.geonames.org/ontology#population owl:Thing
+
+    
+    /// Domains and Ranges
+    
+    
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#RDFData" [  color="blue", label="children features"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#Code" [  color="blue", label="feature code"]; 
+  "https://white-placeholder/0" -> "https://www.geonames.org/ontology#Feature" [  color="blue", label="located in"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#Map" [  color="blue", label="map"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#Feature" [  color="blue", label="nearby"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#RDFData" [  color="blue", label="nearby features"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#Feature" [  color="blue", label="neighbour"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#RDFData" [  color="blue", label="neighbouring features"]; 
+  "https://www.geonames.org/ontology#Feature" -> "n10f887f2561e426e810bba7dfe2f4600b3" [  color="blue", label="level 1 administrative parent"]; 
+  "https://www.geonames.org/ontology#Feature" -> "n10f887f2561e426e810bba7dfe2f4600b4" [  color="blue", label="level 2 administrative parent"]; 
+  "https://www.geonames.org/ontology#Feature" -> "n10f887f2561e426e810bba7dfe2f4600b5" [  color="blue", label="level 3 administrative parent"]; 
+  "https://www.geonames.org/ontology#Feature" -> "n10f887f2561e426e810bba7dfe2f4600b6" [  color="blue", label="level 4 administrative parent"]; 
+  "https://www.geonames.org/ontology#Feature" -> "n10f887f2561e426e810bba7dfe2f4600b7" [  color="blue", label="parent country"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#Feature" [  color="blue", label="parent feature"]; 
+  "https://www.geonames.org/ontology#Feature" -> "https://www.geonames.org/ontology#WikipediaArticle" [  color="blue", label="wikipedia article"]; 
+   "n10f887f2561e426e810bba7dfe2f4600b19" [label="OR", shape="rectangle", color="green"] ;
+   "n10f887f2561e426e810bba7dfe2f4600b19" -> "n10f887f2561e426e810bba7dfe2f4600b22" [ color="black"]
+   "n10f887f2561e426e810bba7dfe2f4600b22" [label="NOT", shape="rectangle", color="green"] ;
+   "n10f887f2561e426e810bba7dfe2f4600b22" -> "https://www.geonames.org/ontology#Cbracadabra" [color="red"] ;
+
+    
+    /// Subclasses
+    
+    
+  "https://www.geonames.org/ontology#Class" -> "http://www.w3.org/2004/02/skos/core#ConceptScheme" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#Code" -> "http://www.w3.org/2004/02/skos/core#Concept" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#Feature" -> "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#GeonamesFeature" -> "https://www.geonames.org/ontology#Feature" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#Map" -> "http://xmlns.com/foaf/0.1/Document" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#RDFData" -> "http://xmlns.com/foaf/0.1/Document" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#WikipediaArticle" -> "http://xmlns.com/foaf/0.1/Document" [ arrowhead="onormal", color="red"]; 
+  "https://www.geonames.org/ontology#Abracadabra" -> "n10f887f2561e426e810bba7dfe2f4600b19" [ arrowhead="onormal", color="red"]; 
+  "http://geovocab.org/spatial#Feature" -> "https://www.geonames.org/ontology#Feature" [ dir="both", color="black:black", arrowhead="onormal", arrowtail="onormal"]; 
+
+
+// Labels
+
+
+   "https://www.geonames.org/ontology#A.PCLI" [shape="record", color="black", label="A.PCLI", height=0] ;
+   "https://www.geonames.org/ontology#RDFData" [shape="record", color="black", label="RDF Data", height=0] ;
+   "https://www.geonames.org/ontology#Bbracadabra" [shape="record", color="black", label="Bbracadabra", height=0] ;
+   "https://www.geonames.org/ontology#GeonamesFeature" [shape="record", color="black", label="{Geonames Feature|geonamesID: owl:Thing\nlat: owl:Thing\nlong: owl:Thing\nname: owl:Thing\ncountryCode: owl:Thing\npopulation: owl:Thing}", height=0] ;
+   "https://www.geonames.org/ontology#WikipediaArticle" [shape="record", color="black", label="Wikipedia Article", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b5" [shape="record", color="grey", label="  ", height=0] ;
+   "https://www.geonames.org/ontology#Code" [shape="record", color="black", label="Code", height=0] ;
+   "https://white-placeholder/0" [shape="record", color="black", label="*", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b7" [shape="record", color="grey", label="  ", height=0] ;
+   "https://www.geonames.org/ontology#Cbracadabra" [shape="record", color="black", label="Cbracadabra", height=0] ;
+   "https://www.geonames.org/ontology#Class" [shape="record", color="black", label="Class", height=0] ;
+   "https://www.geonames.org/ontology#A.ADM1" [shape="record", color="black", label="A.ADM1", height=0] ;
+   "https://www.geonames.org/ontology#Map" [shape="record", color="black", label="Map", height=0] ;
+   "https://www.geonames.org/ontology#A.ADM2" [shape="record", color="black", label="A.ADM2", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b19" [shape="record", color="black", label="OR", height=0] ;
+   "https://www.geonames.org/ontology#Feature" [shape="record", color="black", label="Feature", height=0] ;
+   "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing" [shape="record", color="black", label="SpatialThing", height=0] ;
+   "http://geovocab.org/spatial#Feature" [shape="record", color="black", label="Feature", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b22" [shape="record", color="black", label="NOT", height=0] ;
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme" [shape="record", color="black", label="ConceptScheme", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b3" [shape="record", color="grey", label="  ", height=0] ;
+   "owl:Thing" [shape="record", color="black", label="owl:Thing", height=0] ;
+   "http://www.w3.org/2004/02/skos/core#Concept" [shape="record", color="black", label="Concept", height=0] ;
+   "https://www.geonames.org/ontology#A.ADM3" [shape="record", color="black", label="A.ADM3", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b4" [shape="record", color="grey", label="  ", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b6" [shape="record", color="grey", label="  ", height=0] ;
+   "https://www.geonames.org/ontology#Abracadabra" [shape="record", color="black", label="Abracadabra", height=0] ;
+   "n10f887f2561e426e810bba7dfe2f4600b27" [shape="record", color="grey", label="  ", height=0] ;
+   "https://www.geonames.org/ontology#A.ADM4" [shape="record", color="black", label="A.ADM4", height=0] ;
+   "http://xmlns.com/foaf/0.1/Document" [shape="record", color="black", label="Document", height=0] ;
+}

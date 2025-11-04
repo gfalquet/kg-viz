@@ -1,0 +1,96 @@
+digraph {
+  rankdir="BT"
+
+    
+    // Restrictions
+    
+    
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Ville
+ "http://purl.org/rcnum/onto/rc#Guet_1" -> "http://purl.org/rcnum/onto/rc#Ville" [color = "blue" label="∃ objet"] // shortcut 1
+// owl:someValuesFrom charge http://purl.org/rcnum/onto/rc#Guet_1
+ "http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Guet_1" [color = "blue" label="∃ charge"] // shortcut 1
+// owl:someValuesFrom charge http://purl.org/rcnum/onto/rc#Surveillance
+ "http://purl.org/rcnum/onto/rc#Guet_3" -> "http://purl.org/rcnum/onto/rc#Surveillance" [color = "blue" label="∃ charge"] // shortcut 1
+// owl:someValuesFrom charge nf28ee7bf3b624b588dc286eaa97a319eb5
+ "http://purl.org/rcnum/onto/rc#Guet_4" -> "nf28ee7bf3b624b588dc286eaa97a319eb5" [color = "blue" label="∃ charge"] // shortcut 1
+// owl:someValuesFrom charge http://purl.org/rcnum/onto/rc#Échauguet_2
+ "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "http://purl.org/rcnum/onto/rc#Échauguet_2" [color = "blue" label="∃ charge"] // shortcut 1
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Guet_2
+ "http://purl.org/rcnum/onto/rc#Échauguet_2" -> "http://purl.org/rcnum/onto/rc#Guet_2" [color = "blue" label="∃ objet"] // shortcut 1
+// owl:allValuesFrom membre nf28ee7bf3b624b588dc286eaa97a319eb11
+ "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "nf28ee7bf3b624b588dc286eaa97a319eb11" [color = "blue" label="∀ membre"] // shortcut 1
+// owl:someValuesFrom objet http://purl.org/rcnum/onto/rc#Population
+ "nf28ee7bf3b624b588dc286eaa97a319eb5" -> "http://purl.org/rcnum/onto/rc#Population" [color = "blue" label="∃ objet"] // shortcut 1
+// owl:someValuesFrom membre_de http://purl.org/rcnum/onto/rc#Conseil_de_Genève
+ "nf28ee7bf3b624b588dc286eaa97a319eb11" -> "http://purl.org/rcnum/onto/rc#Conseil_de_Genève" [color = "blue" label="∃ membre_de"] // shortcut 1
+
+    
+    /// Datatype Property Restrictions -> Attributes
+    
+    
+
+    
+    /// Domains and Ranges
+    
+    
+   "nf28ee7bf3b624b588dc286eaa97a319eb5" [label="AND", shape="rectangle", color="green"] ;
+   "nf28ee7bf3b624b588dc286eaa97a319eb11" [label="AND", shape="rectangle", color="green"] ;
+   "nf28ee7bf3b624b588dc286eaa97a319eb5" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]
+   "nf28ee7bf3b624b588dc286eaa97a319eb11" -> "http://purl.org/rcnum/onto/rc#Personne" [ arrowhead="onormal", color="red"]
+
+    
+    /// Subclasses
+    
+    
+  "http://purl.org/rcnum/onto/rc#Conseil" -> "http://purl.org/rcnum/onto/rc#Groupe_de_Personnes" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Groupe_de_Personnes" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Population" -> "http://purl.org/rcnum/onto/rc#Groupe_de_Personnes" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "http://purl.org/rcnum/onto/rc#Groupe_de_Personnes" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Conseil_de_Genève" -> "http://purl.org/rcnum/onto/rc#Conseil" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_1" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Surveillance_de_Nuit" -> "http://purl.org/rcnum/onto/rc#Surveillance" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_3" -> "http://purl.org/rcnum/onto/rc#Personne" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_4" -> "http://purl.org/rcnum/onto/rc#Personne" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Surveillance" -> "http://purl.org/rcnum/onto/rc#Activité" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Ville" -> "http://purl.org/rcnum/onto/rc#Lieu" [ arrowhead="onormal", color="red"]; 
+  "http://purl.org/rcnum/onto/rc#Échauguet_2" -> "http://purl.org/rcnum/onto/rc#Surveillance_de_Nuit" [ arrowhead="onormal", color="red"]; 
+
+    
+    // Annotations
+    
+    
+  "http://purl.org/rcnum/onto/rc#Guet_2" -> "http://purl.org/rcnum/onto/rc#Guet_2-http://www.w3.org/2000/01/rdf-schema#comment" [ label="comment" color="orange"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_3" -> "http://purl.org/rcnum/onto/rc#Guet_3-http://www.w3.org/2000/01/rdf-schema#comment" [ label="comment" color="orange"]; 
+  "http://purl.org/rcnum/onto/rc#Guet_4" -> "http://purl.org/rcnum/onto/rc#Guet_4-http://www.w3.org/2000/01/rdf-schema#comment" [ label="comment" color="orange"]; 
+  "http://purl.org/rcnum/onto/rc#Échauguet_1" -> "http://purl.org/rcnum/onto/rc#Échauguet_1-http://www.w3.org/2000/01/rdf-schema#comment" [ label="comment" color="orange"]; 
+  "http://purl.org/rcnum/onto/rc#Échauguet_2" -> "http://purl.org/rcnum/onto/rc#Échauguet_2-http://www.w3.org/2000/01/rdf-schema#comment" [ label="comment" color="orange"]; 
+
+
+// Labels
+
+
+   "http://purl.org/rcnum/onto/rc#Activité" [shape="record", label="{Activité}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Personne" [shape="record", label="{Personne}", height=0] ;
+   "nf28ee7bf3b624b588dc286eaa97a319eb5" [shape="record", label="{AND}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Ville" [shape="record", label="{Ville}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_4" [shape="record", label="{Guet_4|terme:\l\ - guet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Groupe_de_Personnes" [shape="record", label="{Groupe_de_Personnes}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_3-http://www.w3.org/2000/01/rdf-schema#comment" [shape="rectangle", color="green", label="Personne chargée d'une surveillance (porte, tour, ...)",  height=0] ;
+   "nf28ee7bf3b624b588dc286eaa97a319eb11" [shape="record", label="{AND}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Échauguet_2" [shape="record", label="{Échauguet_2|terme:\l\ - échauguet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_2" [shape="record", label="{Guet_2|terme:\l\ - guet\l - échauguet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Surveillance" [shape="record", label="{Surveillance}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_1" [shape="record", label="{Guet_1|terme:\l\ - guet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Échauguet_1" [shape="record", label="{Échauguet_1|terme:\l\ - échauguet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_4-http://www.w3.org/2000/01/rdf-schema#comment" [shape="rectangle", color="green", label="Agent de police chargé de surveiller la population.",  height=0] ;
+   "http://purl.org/rcnum/onto/rc#Population" [shape="record", label="{Population}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Échauguet_2-http://www.w3.org/2000/01/rdf-schema#comment" [shape="rectangle", color="green", label="Activité de surveillance du guet (groupe)",  height=0] ;
+   "http://purl.org/rcnum/onto/rc#Conseil_de_Genève" [shape="record", label="{Conseil_de_Genève}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Conseil" [shape="record", label="{Conseil}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Échauguet_1-http://www.w3.org/2000/01/rdf-schema#comment" [shape="rectangle", color="green", label="Groupe chargé de la surveillance de l'échauguet 
+(surveillance du guet)",  height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_3" [shape="record", label="{Guet_3|terme:\l\ - guet\l}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Guet_2-http://www.w3.org/2000/01/rdf-schema#comment" [shape="rectangle", color="green", label="Groupe chargé du guet (surveillance)",  height=0] ;
+   "http://purl.org/rcnum/onto/rc#Lieu" [shape="record", label="{Lieu}", height=0] ;
+   "http://purl.org/rcnum/onto/rc#Surveillance_de_Nuit" [shape="record", label="{Surveillance_de_Nuit}", height=0] ;
+}

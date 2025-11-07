@@ -39,7 +39,7 @@ g.bind('', np)
 #g.bind('rdf', RDF)
 
 def makelabel(g: Graph, x: Node) -> str:
-    if type(x) == BNode : return '<bn>'
+    if type(x) == BNode : return '{BN}'
     res = get_preferred_label(g, x)
     if res == '' : res = suffix(x)
     return res
@@ -209,11 +209,11 @@ def genDatatypeRestr(g: Graph, nodeLabels: dict[Node,DotNode], visibleNodes: set
                 WHERE {{ ?x rdfs:subClassOf ?rstr .
                         ?rstr rdf:type owl:Restriction ;  owl:onProperty ?p .
                         {{ 
-                            ?p rdf:type owl:DatatypeProperty . ?rstr owl:someValuesFrom|owl:allValuesFrom|owl:onClass ?y
+                            ?p rdf:type owl:DatatypeProperty . ?rstr owl:someValuesFrom|owl:allValuesFrom|owl:onDataRange ?y
                         }}
                         UNION
                         {{ 
-                            ?rstr owl:someValuesFrom|owl:allValuesFrom|owl:onClass ?y FILTER(STRSTARTS(STR(?y), "http://www.w3.org/2001/XMLSchema#"))
+                            ?rstr owl:someValuesFrom|owl:allValuesFrom|owl:onDataRange ?y FILTER(STRSTARTS(STR(?y), "http://www.w3.org/2001/XMLSchema#"))
                         }}
                         UNION # no class qualification
                         {{

@@ -1,0 +1,967 @@
+@prefix : <http://purl.org/rcnum/onto/rc#> .
+@prefix rc: <http://purl.org/rcnum/onto/rc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cidoc-crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@base <http://purl.org/rcnum/onto/rc#> .
+
+<http://purl.org/rcnum/onto/rc> rdf:type owl:Ontology ;
+                                 owl:imports cidoc-crm: ;
+                                 rdfs:label "Registres des conseils" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/rcnum/onto/rc#XempleRouge
+rc:XempleRouge rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#adjectifRCnum
+rc:adjectifRCnum rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#adjectifRouge
+rc:adjectifRouge rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#graphieRCnum
+rc:graphieRCnum rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#graphieRouge
+rc:graphieRouge rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#verbeRCnum
+rc:verbeRCnum rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#verbeRouge
+rc:verbeRouge rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/rcnum/onto/rc#auteur
+rc:auteur rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#coupable
+rc:coupable rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#date_txt
+rc:date_txt rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#décision
+rc:décision rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#emploi
+rc:emploi rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf rc:occupation .
+
+
+###  http://purl.org/rcnum/onto/rc#fille_de
+rc:fille_de rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#fils_de
+rc:fils_de rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#fonction
+rc:fonction rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:occupation .
+
+
+###  http://purl.org/rcnum/onto/rc#frère_de
+rc:frère_de rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#individu
+rc:individu rdf:type owl:ObjectProperty ;
+            rdfs:comment "Les individus qui portent ce patronyme" .
+
+
+###  http://purl.org/rcnum/onto/rc#infraction
+rc:infraction rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#lemme
+rc:lemme rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#lien-avec-personne
+rc:lien-avec-personne rdf:type owl:ObjectProperty ;
+                      rdfs:domain rc:Personne ;
+                      rdfs:range rc:Personne .
+
+
+###  http://purl.org/rcnum/onto/rc#lien_avec_groupe_de_personnes
+rc:lien_avec_groupe_de_personnes rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#lien_de_parente
+rc:lien_de_parente rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf rc:lien-avec-personne .
+
+
+###  http://purl.org/rcnum/onto/rc#objet
+rc:objet rdf:type owl:ObjectProperty ;
+         rdfs:comment "Lie une séance à un objet qui a été traité dans la séance" .
+
+
+###  http://purl.org/rcnum/onto/rc#objets
+rc:objets rdf:type owl:ObjectProperty ;
+          rdfs:comment """(à supprimer)
+
+Liste des objets d'une séance""" .
+
+
+###  http://purl.org/rcnum/onto/rc#occupation
+rc:occupation rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#partie
+rc:partie rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#peine
+rc:peine rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#position_participant
+rc:position_participant rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#père_de
+rc:père_de rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_belle-mère
+rc:sa_belle-mère rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_cousine
+rc:sa_cousine rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_famille
+rc:sa_famille rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf rc:lien_avec_groupe_de_personnes .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_fille
+rc:sa_fille rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_mère
+rc:sa_mère rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_soeur
+rc:sa_soeur rdf:type owl:ObjectProperty ;
+            owl:equivalentProperty rc:sa_sœur ;
+            rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#sa_sœur
+rc:sa_sœur rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#ses_héritiers
+rc:ses_héritiers rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#soeur_de
+rc:soeur_de rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#son-fils
+rc:son-fils rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#son_beau-frère
+rc:son_beau-frère rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#son_cousin
+rc:son_cousin rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf rc:lien_de_parente .
+
+
+###  http://purl.org/rcnum/onto/rc#son_légataire
+rc:son_légataire rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf rc:lien-avec-personne .
+
+
+###  http://purl.org/rcnum/onto/rc#son_page
+rc:son_page rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf rc:lien-avec-personne .
+
+
+###  http://purl.org/rcnum/onto/rc#son_secrétaire
+rc:son_secrétaire rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf rc:lien-avec-personne .
+
+
+###  http://purl.org/rcnum/onto/rc#séance
+rc:séance rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#tags_wereGeneratedBy
+rc:tags_wereGeneratedBy rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf prov:wasGeneratedBy .
+
+
+###  http://purl.org/rcnum/onto/rc#texte
+rc:texte rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#texte_str
+rc:texte_str rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#titre
+rc:titre rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#victime
+rc:victime rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#wasValidatedBy
+rc:wasValidatedBy rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf prov:wasGeneratedBy .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+prov:wasGeneratedBy rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/rcnum/onto/rc#année
+rc:année rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#code_postal
+rc:code_postal rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#colonne
+rc:colonne rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#complement
+rc:complement rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Complément dans les graphies d'un patronyme" .
+
+
+###  http://purl.org/rcnum/onto/rc#contenu
+rc:contenu rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#contenu_tags
+rc:contenu_tags rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#crochets
+rc:crochets rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:boolean .
+
+
+###  http://purl.org/rcnum/onto/rc#date
+rc:date rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#date_reelle
+rc:date_reelle rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:comment "Date corrigée. La date initialement donnée (originale) est donnée par la propriété 'date'." .
+
+
+###  http://purl.org/rcnum/onto/rc#date_txt_str
+rc:date_txt_str rdf:type owl:DatatypeProperty ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Le texte contenant la date de la séance" .
+
+
+###  http://purl.org/rcnum/onto/rc#folio_debut
+rc:folio_debut rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#graphie
+rc:graphie rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#image
+rc:image rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#langue
+rc:langue rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#lemme_str
+rc:lemme_str rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#ligne
+rc:ligne rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#ligne-prenoms
+rc:ligne-prenoms rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#ln_participant
+rc:ln_participant rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nature_seance
+rc:nature_seance rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#no_registre
+rc:no_registre rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_actuel
+rc:nom_actuel rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_arrondissement
+rc:nom_arrondissement rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_canton
+rc:nom_canton rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_chef_lieu
+rc:nom_chef_lieu rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_département
+rc:nom_département rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_participant
+rc:nom_participant rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_pays
+rc:nom_pays rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#nom_région
+rc:nom_région rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#numero
+rc:numero rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#patronyme
+rc:patronyme rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#prenom
+rc:prenom rdf:type owl:DatatypeProperty ;
+          owl:equivalentProperty rc:prénom .
+
+
+###  http://purl.org/rcnum/onto/rc#prénom
+rc:prénom rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#qualite
+rc:qualite rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty rc:qualité ;
+           rdfs:comment """Sert à repreésenter des qualités/attributs de personnes qui apparaissent dans l'index CH2. 
+
+\"de Saint-Julien, 1544\"
+\"dom, 1539\",
+ \"monsr, 1539\",
+ \"seigneur de Laconnex, 1536\",
+ 
+Certains qualités ont déjà été analyés pour produire des triplets
+
+    :qualite \"(†), 1539\",
+        \"père de Maurice, 1539\",       \"père de Thivent, 1539\" .
+
+   -->
+
+   :pere-de :P5186,  :P5188 ;""" .
+
+
+###  http://purl.org/rcnum/onto/rc#qualité
+rc:qualité rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#rc_toponyme
+rc:rc_toponyme rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#seqno
+rc:seqno rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:comment "No. d'ordre de cet objet dans la séance où il apparait" .
+
+
+###  http://purl.org/rcnum/onto/rc#texte_str
+rc:texte_str rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#titre_str
+rc:titre_str rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#variante
+rc:variante rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/rcnum/onto/rc#version
+rc:version rdf:type owl:DatatypeProperty ;
+           rdfs:comment """- v1 - texte brut
+- v2 - normalisation Registres EdG
+- v3b - normalisation RCnum 
+- v4 - modernisation""" .
+
+
+###  http://purl.org/rcnum/onto/rc#voir-aussi
+rc:voir-aussi rdf:type owl:DatatypeProperty ;
+              rdfs:comment "Renvoie à un autre patronyme" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/rcnum/onto/rc#Acteur
+rc:Acteur rdf:type owl:Class ;
+          owl:equivalentClass cidoc-crm:E39_Actor ;
+          rdfs:subClassOf rc:Entité_RC .
+
+
+###  http://purl.org/rcnum/onto/rc#Action
+rc:Action rdf:type owl:Class ;
+          owl:equivalentClass cidoc-crm:E7_Activity ;
+          rdfs:subClassOf rc:Entité_RC .
+
+
+###  http://purl.org/rcnum/onto/rc#Bien_Matériel
+rc:Bien_Matériel rdf:type owl:Class ;
+                 rdfs:subClassOf rc:Entité_RC ,
+                                 cidoc-crm:E72_Legal_Object .
+
+
+###  http://purl.org/rcnum/onto/rc#Bâtiment
+rc:Bâtiment rdf:type owl:Class ;
+            rdfs:subClassOf rc:Objet_immobilier .
+
+
+###  http://purl.org/rcnum/onto/rc#Bâtiment_Administratif
+rc:Bâtiment_Administratif rdf:type owl:Class ;
+                          rdfs:subClassOf rc:Bâtiment .
+
+
+###  http://purl.org/rcnum/onto/rc#Condamnation
+rc:Condamnation rdf:type owl:Class ;
+                rdfs:subClassOf rc:Action ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty rc:coupable ;
+                                  owl:someValuesFrom rc:Acteur
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty rc:infraction ;
+                                  owl:someValuesFrom rc:Infraction
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty rc:peine ;
+                                  owl:someValuesFrom rc:Peine
+                                ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Crime
+rc:Crime rdf:type owl:Class ;
+         rdfs:subClassOf rc:Infraction .
+
+
+###  http://purl.org/rcnum/onto/rc#Division_Administrative
+rc:Division_Administrative rdf:type owl:Class ;
+                           rdfs:subClassOf rc:Entité_Géographique .
+
+
+###  http://purl.org/rcnum/onto/rc#Document
+rc:Document rdf:type owl:Class ;
+            rdfs:subClassOf rc:Entité_RC ,
+                            cidoc-crm:E31_Document .
+
+
+###  http://purl.org/rcnum/onto/rc#Enfants_de
+rc:Enfants_de rdf:type owl:Class ;
+              rdfs:subClassOf rc:Ensemble_de_Personnes .
+
+
+###  http://purl.org/rcnum/onto/rc#Ensemble_de_Personnes
+rc:Ensemble_de_Personnes rdf:type owl:Class ;
+                         rdfs:subClassOf rc:Entité_RC ,
+                                         cidoc-crm:E74_Group .
+
+
+###  http://purl.org/rcnum/onto/rc#Entité_Géographique
+rc:Entité_Géographique rdf:type owl:Class ;
+                       rdfs:subClassOf rc:Entité_RC ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:code_postal ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_actuel ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_arrondissement ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_canton ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_chef_lieu ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_département ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_pays ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:nom_région ;
+                                         owl:allValuesFrom xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty rc:rc_toponyme ;
+                                         owl:allValuesFrom xsd:string
+                                       ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Entité_RC
+rc:Entité_RC rdf:type owl:Class .
+
+
+###  http://purl.org/rcnum/onto/rc#Famille
+rc:Famille rdf:type owl:Class ;
+           rdfs:subClassOf rc:Ensemble_de_Personnes .
+
+
+###  http://purl.org/rcnum/onto/rc#Folio
+rc:Folio rdf:type owl:Class ;
+         rdfs:subClassOf rc:Objet_Physique ,
+                         cidoc-crm:E22_Human-Made_Object ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:numero ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:image ;
+                           owl:allValuesFrom xsd:anyURI
+                         ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Infraction
+rc:Infraction rdf:type owl:Class ;
+              rdfs:subClassOf rc:Action ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty rc:auteur ;
+                                owl:someValuesFrom rc:Acteur
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty rc:auteur ;
+                                owl:allValuesFrom rc:Acteur
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty rc:victime ;
+                                owl:allValuesFrom rc:Acteur
+                              ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Lieu
+rc:Lieu rdf:type owl:Class ;
+        owl:equivalentClass cidoc-crm:E53_Place ;
+        rdfs:subClassOf rc:Entité_Géographique .
+
+
+###  http://purl.org/rcnum/onto/rc#Lieu_Habité
+rc:Lieu_Habité rdf:type owl:Class ;
+               rdfs:subClassOf rc:Lieu ;
+               rdfs:comment "(geonames) a city, town, village, or other agglomeration of buildings where people live and work" .
+
+
+###  http://purl.org/rcnum/onto/rc#Objet
+rc:Objet rdf:type owl:Class ;
+         rdfs:subClassOf rc:Document ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:texte ;
+                           owl:someValuesFrom rc:Texte
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:décision ;
+                           owl:allValuesFrom [ rdf:type owl:Class ;
+                                               owl:unionOf ( rc:Condamnation
+                                                             rc:Payement
+                                                           )
+                                             ]
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:lemme ;
+                           owl:allValuesFrom rc:Texte
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:folio_debut ;
+                           owl:someValuesFrom rdfs:Literal
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:seqno ;
+                           owl:someValuesFrom xsd:integer
+                         ] ;
+         rdfs:comment """Cette classe comprend la partie d'un pv de séances relative à un objet précis.
+
+La propriété seqno indique le numéro d'ordre de cet objet dans le PV de la séance""" .
+
+
+###  http://purl.org/rcnum/onto/rc#Objet_Physique
+rc:Objet_Physique rdf:type owl:Class ;
+                  rdfs:subClassOf rc:Entité_RC ,
+                                  cidoc-crm:E22_Human-Made_Object .
+
+
+###  http://purl.org/rcnum/onto/rc#Objet_immobilier
+rc:Objet_immobilier rdf:type owl:Class ;
+                    rdfs:subClassOf rc:Bien_Matériel .
+
+
+###  http://purl.org/rcnum/onto/rc#Objet_mobilier
+rc:Objet_mobilier rdf:type owl:Class ;
+                  rdfs:subClassOf rc:Bien_Matériel .
+
+
+###  http://purl.org/rcnum/onto/rc#Office
+rc:Office rdf:type owl:Class ;
+          rdfs:subClassOf rc:Role .
+
+
+###  http://purl.org/rcnum/onto/rc#Participation
+rc:Participation rdf:type owl:Class ;
+                 rdfs:subClassOf rc:Document ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty rc:colonne ;
+                                   owl:someValuesFrom xsd:integer
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty rc:ligne ;
+                                   owl:someValuesFrom xsd:integer
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty rc:nom_participant ;
+                                   owl:someValuesFrom xsd:string
+                                 ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Partie
+rc:Partie rdf:type owl:Class ;
+          rdfs:subClassOf rc:Document ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:titre ;
+                            owl:someValuesFrom rc:Texte
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:objet ;
+                            owl:allValuesFrom rc:Objet
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:position_participant ;
+                            owl:allValuesFrom rc:Participation
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:folio_debut ;
+                            owl:someValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:seqno ;
+                            owl:someValuesFrom xsd:integer
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:nom_participant ;
+                            owl:allValuesFrom xsd:string
+                          ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Patronyme
+rc:Patronyme rdf:type owl:Class ;
+             rdfs:subClassOf rc:Entité_RC ,
+                             cidoc-crm:E41_Appellation ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty rc:individu ;
+                               owl:allValuesFrom rc:Personne
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty rc:complement ;
+                               owl:allValuesFrom rdf:langString
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty rc:crochets ;
+                               owl:allValuesFrom xsd:boolean
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty rc:variante ;
+                               owl:allValuesFrom rdf:langString
+                             ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Payement
+rc:Payement rdf:type owl:Class ;
+            rdfs:subClassOf rc:Action .
+
+
+###  http://purl.org/rcnum/onto/rc#Peine
+rc:Peine rdf:type owl:Class ;
+         rdfs:subClassOf rc:Action .
+
+
+###  http://purl.org/rcnum/onto/rc#Personne
+rc:Personne rdf:type owl:Class ;
+            owl:equivalentClass cidoc-crm:E21_Person ;
+            rdfs:subClassOf rc:Acteur ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:lien-avec-personne ;
+                              owl:allValuesFrom rc:Personne
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:fille_de ;
+                              owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                              owl:onClass rc:Personne
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:fils_de ;
+                              owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                              owl:onClass rc:Personne
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:sa_mère ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass rc:Personne
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:ligne-prenoms ;
+                              owl:allValuesFrom rdf:langString
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:patronyme ;
+                              owl:allValuesFrom rdf:langString
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:prénom ;
+                              owl:allValuesFrom rdf:langString
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:qualite ;
+                              owl:allValuesFrom rdf:langString
+                            ] .
+
+
+###  http://purl.org/rcnum/onto/rc#Personne_Non_Identifiee
+rc:Personne_Non_Identifiee rdf:type owl:Class ;
+                           rdfs:subClassOf rc:Personne .
+
+
+###  http://purl.org/rcnum/onto/rc#Professionnel
+rc:Professionnel rdf:type owl:Class ;
+                 rdfs:subClassOf rc:Personne ;
+                 rdfs:comment "personne spécialisée dans un secteur d'activité ou exerçant une profession ou un métier (Wikidata)" ;
+                 rdfs:isDefinedBy "https://www.wikidata.org/wiki/Q702269" .
+
+
+###  http://purl.org/rcnum/onto/rc#Registre
+rc:Registre rdf:type owl:Class ;
+            rdfs:subClassOf rc:Document ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:séance ;
+                              owl:allValuesFrom rc:Seance
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:année ;
+                              owl:someValuesFrom xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty rc:no_registre ;
+                              owl:someValuesFrom xsd:integer
+                            ] ;
+            rdfs:comment """Un registre comprend toutes les séances tenues pendant une certaine période (en général une année)
+
+La propriété séance lie un regisre à ses séances.""" .
+
+
+###  http://purl.org/rcnum/onto/rc#Registre_Physique
+rc:Registre_Physique rdf:type owl:Class ;
+                     rdfs:subClassOf rc:Objet_Physique ,
+                                     cidoc-crm:E22_Human-Made_Object .
+
+
+###  http://purl.org/rcnum/onto/rc#Role
+rc:Role rdf:type owl:Class ;
+        rdfs:subClassOf rc:Entité_RC .
+
+
+###  http://purl.org/rcnum/onto/rc#Seance
+rc:Seance rdf:type owl:Class ;
+          rdfs:subClassOf rc:Document ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:date_txt ;
+                            owl:someValuesFrom rc:Texte
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:partie ;
+                            owl:someValuesFrom rc:Partie
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:objet ;
+                            owl:allValuesFrom rc:Objet
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:partie ;
+                            owl:allValuesFrom rc:Partie
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:date ;
+                            owl:someValuesFrom xsd:dateTime
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:folio_debut ;
+                            owl:someValuesFrom rdfs:Literal
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty rc:seqno ;
+                            owl:someValuesFrom xsd:integer
+                          ] ;
+          rdfs:comment """Les instances de cette classe sont des procès-verbaux de séances. On s'intéresse donc à l'aspect documentaire (conceptuel) des séances. 
+
+Dans ce sens, les séances ne sont pas des évènements.
+
+Ce ne sont pas non plus des objets physiques comme les folios qui composent les registres.""" .
+
+
+###  http://purl.org/rcnum/onto/rc#Texte
+rc:Texte rdf:type owl:Class ;
+         rdfs:subClassOf rc:Entité_RC ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:tags_wereGeneratedBy ;
+                           owl:allValuesFrom prov:Activity
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:wasValidatedBy ;
+                           owl:allValuesFrom prov:Activity
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:contenu ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:langue ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty rc:version ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment """Cette classe sert à représenter les textes provenant d'une source historique.
+
+Un objet de type Texte possède un contenu textuel qui doit être accompagné de
+- sa version (de la transcription brut à la modernisation)
+- sa langue
+et peu est complété par
+- une indication du processus de validation (suivant provo) 
+- un texte contenant des tags qui résultent de la reconnaissance d'entités nommées
+  - dans ce cas on pourra indiquer le processus qui a produit les tags (tags_wereDerivedFrom) en utilisant ensuite le vocabulaire provo""" .
+
+
+###  http://purl.org/rcnum/onto/rc#Personne_chargée_d'un_office
+<http://purl.org/rcnum/onto/rc#Personne_chargée_d'un_office> rdf:type owl:Class ;
+                                                             rdfs:subClassOf rc:Personne .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E21_Person
+cidoc-crm:E21_Person rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object
+cidoc-crm:E22_Human-Made_Object rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E31_Document
+cidoc-crm:E31_Document rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E39_Actor
+cidoc-crm:E39_Actor rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E41_Appellation
+cidoc-crm:E41_Appellation rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E53_Place
+cidoc-crm:E53_Place rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object
+cidoc-crm:E72_Legal_Object rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E74_Group
+cidoc-crm:E74_Group rdf:type owl:Class .
+
+
+###  http://www.cidoc-crm.org/cidoc-crm/E7_Activity
+cidoc-crm:E7_Activity rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/prov#Activity
+prov:Activity rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

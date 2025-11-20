@@ -1,10 +1,16 @@
 """ Create a graphical representation in .dot of an OWL ontology
 
+Limitations:
+- individuals are not represented
+- most of the property axioms (RBox) are not represented (domains/ranges are represented)
+- 
+
 v. 2025-10-10
 
 typical use : python3 path-to-owl2dot.py  path-to-owl-file | dot -Tpdf  -o path-to-graph-view-file.pdf
 
 """
+
 
 from rdflib import Graph, Literal, URIRef, BNode
 from rdflib import Namespace
@@ -16,9 +22,10 @@ import re
 
 from dataclasses import dataclass
 
-SUBCLASS_LINK_COLOR = "grey"
-RESTR_LINK_COLOR = "black"
-DOM_RNG_LINK_COLOR = "black"
+SUBCLASS_LINK_COLOR = "orange"
+RESTR_LINK_COLOR = "blue"
+DOM_RNG_LINK_COLOR = "#008800"
+ARG_LINK_COLOR = "magenta"
 
 @dataclass
 class DotNode:
@@ -29,6 +36,9 @@ class DotNode:
     isAnnotVal: bool = False
     isAndOrNot: bool = False
 
+
+annot_flag = '--annot' in sys.argv
+alc_flag = '--alc' in sys.argv
 
 np = Namespace("http://unige.ch/rcnum/")
 np = Namespace("http://humanbehaviourchange.org/ontology/")
@@ -127,10 +137,10 @@ def genObjRestr(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set[No
                 print(f"// {op} {arclabel} {r.y}")
                 if op == "owl:someValuesFrom":
                     # ALT arclabel = '∃ ' + arclabel
-                    arclabel = f'''<B>  {arclabel}</B>  some'''
+                    arclabel = f''' ∃ <B>{arclabel}</B>''' if alc_flag else f'''<B>  {arclabel}</B>  some'''
                 elif op == "owl:allValuesFrom":
                     # ALT arclabel = '∀ ' + arclabel
-                    arclabel = f'''<B>  {arclabel}</B> only'''
+                    arclabel = f''' ∀ <B>{arclabel}</B>''' if alc_flag else f'''<B>  {arclabel}</B> only'''
                 elif op == "owl:cardinality":
                     target = "owl:Thing"
                     arclabel = "= " + r.y + ' ' + arclabel
@@ -246,7 +256,9 @@ def genDomRng(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set[Node
     
     """)
     qdomrng = f"""
-                SELECT DISTINCT ?p ?dom ?rng 
+                SELECT DISTINCT ?dom ?rng 
+                    #(GROUP_CONCAT(REPLACE(REPLACE(STR(?p), ".*/", ""), ".*#", "") ; separator="<br/>") AS ?props)
+                    (GROUP_CONCAT(STR(?p) ; separator="<br/>") AS ?props)
                 WHERE {{ ?p rdf:type owl:ObjectProperty .
                     OPTIONAL {{
                         ?p rdfs:domain ?dom
@@ -255,6 +267,7 @@ def genDomRng(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set[Node
                         ?p rdfs:range ?rng
                     }}
                 }}
+                GROUP BY ?dom ?rng
                 """
     qres = g.query(qdomrng)
     nid = 0
@@ -266,13 +279,20 @@ def genDomRng(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set[Node
                 nodeLabels[nodeid] = DotNode(classname="*")
                 visibleNodes.add(nodeid)
             else:
-                nodeid = "xxxx" # never used
+                nodeid = None # never used
             source = r.dom if r.dom != None else nodeid
             target = r.rng if r.rng != None else nodeid
+            if r.dom != None : 
+                if r.dom not in nodeLabels : nodeLabels[r.dom] = DotNode(classname=makelabel(g, r.dom))
+                visibleNodes.add(r.dom)
+            if r.rng != None :
+                if r.rng not in nodeLabels : nodeLabels[r.rng] = DotNode(classname=makelabel(g, r.rng))
+                visibleNodes.add(r.rng)
+            proplabels = "<br/>".join(list(map(lambda x : makelabel(g, URIRef(x)), r.props.split('<br/>'))))
             if source == target: # loop
-                print(f'  "{source}":n -> "{target}":s [  color="{DOM_RNG_LINK_COLOR}", label="{makelabel(g, r.p)}"]; ')
+                print(f'  "{source}":n -> "{target}":s [  color="{DOM_RNG_LINK_COLOR}", label=<<b>{proplabels}</b>>]')      #{makelabel(g, r.p)}"]; ')
             else:
-                print(f'  "{source}" -> "{target}" [  color="{DOM_RNG_LINK_COLOR}", label="{makelabel(g, r.p)}"]; ')
+                print(f'  "{source}" -> "{target}" [  color="{DOM_RNG_LINK_COLOR}", label=<<b>{proplabels}</b>>]; ')
 
   
 
@@ -306,7 +326,7 @@ def genAndOr(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set[Node]
     qares = g.query(qa)
     for ra in qares:
             if (ra.x, ra.c) not in opShortcuts:
-                print(f"""   "{ra.x}" -> "{ra.c}" [ color="{SUBCLASS_LINK_COLOR}"]""")
+                print(f"""   "{ra.x}" -> "{ra.c}" [ color="{ARG_LINK_COLOR}"]""")
                 andornot.add(ra.x)
                 andornotarg.add(ra.c)
                 visibleNodes.add(ra.c)
@@ -422,6 +442,7 @@ def genAnnotations(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set
         property = makelabel(g, r.a)
         if r.x not in nodeLabels:
             nodeLabels[r.x] = DotNode(classname=makelabel(g, r.x))
+        value = r.vals
         if 'label' in property.lower() or 'term' in property.lower():
             nodeLabels[r.x].annotations += property + ":\\l\ - <B>" + r.vals + "</B>\\l"
         else:
@@ -452,7 +473,8 @@ subc = genSub(g, dtypeRest, visibleNodes)
 
 eqc = genEquiv(g, visibleNodes)
 
-genAnnotations(g, dotnodelabel, visibleNodes)
+if annot_flag : 
+    genAnnotations(g, dotnodelabel, visibleNodes)
 
 ### addUpperLevel(g, subToRestr, visibleNodes)
 
@@ -476,16 +498,11 @@ for nid in visibleNodes: # dotnodelabel:
     elif n.isAndOrNot:
         pass
     else:
-        lab = '{<B>'+n.classname+'</B>'
-        if n.annotations != '':
-            lab += '|' + n.annotations
-        if n.attributes != '':
-            lab += '|' + n.attributes
-        lab += '}'
-        lab = lab.replace('\l','<BR/>')
-        lab = lab.replace('\\','')
-        #
-        lab = f"""<table BORDER="0" CELLBORDER="1" CELLSPACING="0" ><tr><td><b>{n.classname}</b></td></tr>"""
+        if n.classname == '*':
+            cls_display = '<i>Thing</i>'
+        else: 
+            cls_display = f'<b>{n.classname}</b>'
+        lab = f"""<table BORDER="0" CELLBORDER="1" CELLSPACING="0" ><tr><td>{cls_display}</td></tr>"""
         if n.annotations != '':
             lab += f"""<tr><td align="left">{n.annotations}</td></tr>"""
         if n.attributes != '':

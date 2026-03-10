@@ -7,7 +7,19 @@ Limitations:
 
 v. 2025-10-10
 
-typical use : python3 path-to-owl2dot.py  path-to-owl-file | dot -Tpdf  -o path-to-graph-view-file.pdf
+SYNOPSIS 
+
+    python3 path-to-owl2dot.py  path-to-owl-file [options] | dot -Tpdf  -o path-to-graph-view-file.pdf
+
+OPTIONS: 
+
+    --alc      use the ALC mathematical symbols, by default use the Manchester syntax (some, exists)
+
+    --annot    display the class annotations (labels, etc.)
+
+    --bw       use only black, white and gray colors
+
+    --lang=xx  preferred language for labels (default: en)
 
 """
 
@@ -22,11 +34,6 @@ import re
 
 from dataclasses import dataclass
 
-SUBCLASS_LINK_COLOR = "orange"
-RESTR_LINK_COLOR = "blue"
-DOM_RNG_LINK_COLOR = "#008800"
-ARG_LINK_COLOR = "magenta"
-
 @dataclass
 class DotNode:
     classname: str = ''
@@ -37,8 +44,30 @@ class DotNode:
     isAndOrNot: bool = False
 
 
+SUBCLASS_LINK_COLOR = "orange"
+RESTR_LINK_COLOR = "blue"
+DOM_RNG_LINK_COLOR = "#008800"
+ARG_LINK_COLOR = "magenta"
+PREFERRED_LANGUAGE = "en"
+
+def setBW():
+    global SUBCLASS_LINK_COLOR
+    global RESTR_LINK_COLOR
+    global DOM_RNG_LINK_COLOR
+    global ARG_LINK_COLOR
+    SUBCLASS_LINK_COLOR = "#BBBBBB"
+    RESTR_LINK_COLOR = "black"
+    DOM_RNG_LINK_COLOR = "#333333"
+    ARG_LINK_COLOR = "#666666"
+
+
+
 annot_flag = '--annot' in sys.argv
 alc_flag = '--alc' in sys.argv
+if '--bw' in sys.argv : setBW()
+for arg in sys.argv:
+    if arg.startswith('--lang='):
+        PREFERRED_LANGUAGE = arg[len('--lang='):]
 
 np = Namespace("http://unige.ch/rcnum/")
 np = Namespace("http://humanbehaviourchange.org/ontology/")
@@ -66,9 +95,9 @@ def get_preferred_label(graph: Graph, subject: URIRef) -> str:
         if isinstance(label, Literal) and label.language is None:
             return str(label)
     
-    # Try to find a label with 'en' language tag
+    # Try to find a label with a language tag in the preferred language
     for label in labels:
-        if isinstance(label, Literal) and label.language == 'en':
+        if isinstance(label, Literal) and label.language == PREFERRED_LANGUAGE:
             return str(label)
     
     # Return any label
@@ -168,10 +197,6 @@ def genObjRestr(g: Graph, nodeLabels : dict[Node, DotNode], visibleNodes: set[No
                 if shortcut == optSc:
                     if target == r.x : # loop
                         loopNo += 1
-                        #intermediateNode = f"X-inter-loop-{loopNo}"
-                        #print(f""" "{r.x}" -> "{intermediateNode}":e [color = "blue" label=<{arclabel}>] ; // shortcut 1""")
-                        #print(f""" "{intermediateNode}":w -> "{r.x}" [color = "blue"]; """)
-                        #print(f""" "{intermediateNode}" [label=" ", width=0.25, height=0.25] ; """)
                         print(f""" "{r.x}":n -> "{target}":s [color = "{RESTR_LINK_COLOR}", label=<{arclabel}>] // shortcut 1""")
                     else:
                         print(f""" "{r.x}" -> "{target}" [color = "{RESTR_LINK_COLOR}", label=<{arclabel}>] // shortcut 1""")
